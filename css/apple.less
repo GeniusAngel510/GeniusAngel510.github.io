@@ -1,0 +1,525 @@
+
+#con {
+  width: 100%;
+  /*height: 5000px;*/
+  margin: 0 auto;
+
+}
+//主导航
+#nav {
+  width: 100%;
+  height: 50px;
+  background: #333;
+
+}
+//屏幕大于500px
+@media only screen and (min-width: 500px) {
+//*{
+//  display: none;
+//}
+  #nav #na{
+    display: none;
+  }
+  #nav ul {
+    width: 60rem;
+    margin: 0 auto;
+    overflow: hidden;
+    //border: 1px solid red;
+  }
+
+  #nav ul img {
+    /*vertical-align: middle;*/
+    width: 20px;
+  }
+  #nav ul a {
+    display: block;
+    padding: 12px 2rem;
+    text-decoration: none;
+    color: #fefefe;
+    transition: color 1s;
+  }
+
+  #nav ul a:hover {
+    color: #6C6C6C;
+  }
+
+  #nav ul li {
+    float: left;
+    /*padding: 15px 30px ;*/
+  }
+  #nav #sou{
+    display: none;
+  }
+
+  //底部
+
+  #bot{
+    width: 75rem;
+    background: #F2F2F2;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  #bot p{
+    padding: 2rem 10rem;
+
+    color: #555555;
+  }
+  #bot p img{
+
+    width: 20px;
+  } 
+
+  #bot ul{
+    margin: 0 auto;
+    //overflow: hidden;
+    float: left;
+    width: 15rem;
+    //border: 1px solid red;
+  }
+
+  #bot .bot_ul {
+    margin-left: 10rem;
+  }
+  #bot #b22{
+    margin-left: 15rem;
+  }
+  #bot .bot_li{
+    //border: 1px solid red;
+    width: 8%;
+    display: inline-block;
+    font-weight: bold;
+    margin: 0 3rem;
+    float: left;
+  }
+  #bot ul{
+    margin: 0 1rem;
+    width: 10rem;
+  }
+  #bot ul li{
+    //float: left;
+    color: #666;
+    margin:1rem 5rem ;
+    width: 80%;
+    font-size: small;
+    cursor: pointer;
+  }
+  #bot ul li:hover{
+
+    text-decoration: underline;
+    color: #222;
+  }
+  #bot .bot_p{
+    font-size: smaller;
+  }
+  #bot .bot_p .blue{
+    color: #003eff;
+    cursor: pointer;
+  }
+  #bot .bot_p .blue:hover{
+    text-decoration: underline;
+  }
+  #bot .bot_sp{
+    margin-left: 10rem;
+  }
+  #bot b{
+    color: #666;
+  }
+  #bot span{
+    display: inline-block;
+    margin: 10px;
+    font-size: smaller;
+    color: #666;
+  }
+  #bot span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0e0e0e;
+  }
+  #bot span img{
+    width: 20px;
+  }
+  #bot .bot_st{
+    display: none;
+  }
+
+  //中间
+  #mid #gu_d{
+    width: 100%;
+    background: #808080;
+    overflow: hidden;
+  }
+  #mid #gu_d h2{
+    padding: 10px;
+    float: left;
+  }
+  #mid #gu_d p{
+    font-size: small;
+    text-align: right;
+    padding: 10px;
+    float: right;
+    cursor: pointer;
+    transition: color 1s;
+  }
+  #mid #gu_d p:hover {
+    color: #0e90d2;
+  }
+  #mid #mid_z{
+    width: 100%;
+    margin: 0 auto;
+    //height: 50rem;
+    position: relative;
+  }
+  #mid #mid_z img{
+    display: block;
+    width: 80rem;
+    margin: auto;
+
+  }
+  #mid #mid_z h1{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -25rem;
+    width: 50rem;
+  }
+  #mid #mid_z p{
+    width: 20rem;
+    position: absolute;
+    font-size: larger;
+    top: 5rem;
+    left: 50%;
+    margin-left: -10rem;
+  }
+  #mid #mid_z input{
+    position: absolute;
+    width: 30rem;
+    height: 3rem;
+    //background:url("../img/sou.png") no-repeat scroll right center ;
+    border-radius: 5px;
+    background-size: 50px;
+    top: 8rem;
+    left: 50%;
+    margin-left: -15rem;
+  }
+  #mid #mid_z button{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    background:url("../img/sou.png") no-repeat;
+    background-size: 50px;
+    top:8.2rem;
+    left: 50rem;
+    border: 0;
+  }
+  #mid #mid_z2{
+    width: 75rem;
+    height: 20rem;
+    overflow: hidden;
+    margin: 0 auto;
+    //border: 1px solid red;
+  }
+  #mid #mid_z2 div{
+    float: left;
+    cursor: pointer;
+    width: 12rem;
+
+  }
+
+  #mid #mid_z2 div img{
+    width: 10rem;
+    height: 12rem;
+  }
+  #mid #mid_z2 div p:hover{
+    text-decoration: underline;
+
+  }
+  //产品
+  #mid #chan{
+    width: 75rem;
+    margin: auto;
+  }
+  #mid #chan h2{
+    color: #0e90d2;
+  }
+  #mid #chan span img{
+    width: 1rem;
+  }
+  #mid #pin{
+    width: 75rem;
+    margin: auto;
+
+  }
+  #mid #pin ul li{
+    border: 1px solid red;
+    display: inline-block;
+    width: 15rem;
+  }
+
+}
+//屏幕小于500px
+@media only screen and (max-width: 500px)  {
+  //回顶
+
+
+  //导航
+  #nav{
+    position: relative;
+  }
+  #nav ul{
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 70%;
+    height: 500%;
+    background: #000;
+  }
+  #nav ul li {
+    margin: 10px;
+
+  }#nav ul li a{
+     color: #fefefe;
+     text-decoration: none;
+   }
+  #nav ul img{
+    display: none;
+  }
+  #nav #na{
+    display: block;
+    overflow: hidden;
+  }
+  #nav #na #cuo{
+    display: none;
+  }
+  #nav #sou{
+    display: block;
+    background:url("../img/sou.png") no-repeat scroll right center transparent;
+    background-size: 20px;
+
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  #nav #na img{
+    float: left;
+    width: 20px;
+    margin: 10px 13%;
+  }
+  #nav #xian{
+    z-index: 100;
+    display: none;
+
+  }
+  #nav #xian li,input{
+    margin: 10px 10%;
+    color: #fefefe;
+  }
+  //底部
+  #bot p {
+    color: #555;
+  }
+#bot p img{
+  width: 20px;
+}
+#bot .bot_li{
+  display: none;
+}
+  #bot .bot_st{
+  font-weight: bold;
+    display: block;
+    margin: 10px;
+    overflow: hidden;
+}
+  #bot .bot_st img{
+    width: 15px;
+    float: right;
+    margin: 5px 10px ;
+  }
+  #bot ul{
+    margin: 10px;
+
+  }
+  #bu_t1,#bu_t2,#bu_t3,#bu_t4{
+    display: none;
+  }
+  #bot span{
+    font-size: smaller;
+    //margin-bottom: 5rem;
+  }
+  #bot ul li{
+    margin: 10px;
+  }
+  #bot #zhi_c,#zhi_c2,#zhi_c3,#zhi_c4{
+    display: none;
+  }
+  //#bot_d{
+  //  margin-bottom: 10rem;
+  //}
+  //中间
+  #mid{
+    display: none;
+  }
+  #med #med_t h1{
+    float: left;
+    margin: 1rem;
+  }
+  #med #med_t{
+    overflow: hidden;
+    background: #C5C4CA;
+  }
+  #med #med_t #guan{
+    display: none;
+  }
+  #med #med_t img{
+    width: 20px;
+  float: right;
+        margin: 1rem;
+
+  }
+  #med #med_t #med_p{
+    margin:5rem;
+    display: none;
+  }
+  #med #med_t #med_p p{
+     margin: 1rem;
+   }
+  #med #med_t #med_p p:hover{
+     color: #0A68BF;
+   }
+  #med .bei{
+    width:100%;
+  }
+  #med{
+    position: relative;
+  }
+  #med .btn{
+    background: url("../img/sou.png") no-repeat;
+    -webkit-background-size: 30px;
+    background-size: 30px;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    //top: 10%;
+    left: 70%;
+    border: none;
+  }
+  #med .ipt{
+    display: block;
+    margin: auto;
+    width: 15rem;
+    height: 2rem;
+    border: 1px solid salmon;
+  }
+  //产品
+  #med #pro ul  {
+    overflow: hidden;
+  }  #med #pro ul li  {
+  width: 40%;
+   float: left;
+  margin: 1rem;
+  //border: 1px solid red;
+  }  #med #pro ul li img{
+    //width: 10rem;
+  display: block;
+  margin: auto;
+  width: 100%;
+  //height: 100%;
+    height: 10rem;
+  } #med #pro ul li p{
+   text-align: center;
+                  font-weight: bold;
+  } #med #pro ul li p:hover{
+   text-decoration: underline;
+  }
+  #med #pro #kai2{
+    width: 1rem;
+    float:right;
+    margin-right: 5rem;
+  }
+  #med #pro #zhan{
+    display: inline-block;
+  }
+
+  #med #pro #guan2{
+    width: 1rem;
+    float: right;
+    display: none;
+    margin-right: 5rem;
+  }
+  #med #pro #xian2{
+    display: none;
+  }
+  #med #pro #xian2 li{
+    float: none ;
+    color: #0e0e0e;
+  }#med #pro #xian2 li:hover{
+    text-decoration: underline;
+
+  }
+
+   //热门
+  #re #op2{
+    color: #003eff;
+  }#re #op2:hover{
+    text-decoration: underline;
+  }
+  #re h1{
+    text-align: center;
+    font-weight: bold;margin: 1rem
+  }
+  #re img{
+    //width: 15rem;
+    width: 90%;
+    display: block;
+    margin: auto;
+  }
+  #re p{
+    //width: 22rem;
+    width: 90%;
+    text-align: center;
+    margin: 1rem;
+    font-size: small;
+    line-height: 1.5rem;
+  }
+  #re .op2{
+    color: #003eff;
+    text-align: center;
+  }
+  #re .op2:hover{
+    text-decoration: underline;
+  }
+  #re .bao{
+    width: 5rem;
+
+    transition: 1s;
+  }
+  #re .bao:hover{
+    transform: scale(1.2);
+  }
+  #re button{
+    background: #0A68BF;
+    color: #fefefe;
+    border: none;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 3px;
+  }
+  #re h2{
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem;
+    font-size: smaller;
+  }
+
+}
+//底
+#bot_d{
+  width: 100%;
+  height: 25rem;
+  background: #F2F2F2;
+}
+#mid_j{
+  width: 100%;
+  background: #C2BFC6;
+}
+

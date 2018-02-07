@@ -2,319 +2,333 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="public/css/reset.css">
-    <link rel="stylesheet" href="public/layui/css/layui.css">
-    <link rel="stylesheet" href="public/css/home.css">
-    <script src="public/js/jquery-3.2.1.js"></script>
-    <script src="public/js/echarts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>apple</title>
+    <link rel="icon" href="img/apple.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/apple.css">
+    <!--<link rel="stylesheet" href="css/apple2.css">-->
+    <!--<link rel="stylesheet/less" href="css/apple.less">-->
+    <!--<script src="js/less.js"></script>-->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/apple.js" defer async></script>
 
-    <!--地图-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
 </head>
 <body>
 
-<div class="con">
-    <div class="logo">
-        <h1>
-            <img src="public/img/LOGO.png" alt="logo">
-
-        </h1>
-        <!--<p>禹门口灌区信息化综合系统</p>-->
-    </div>
-    <div class="con-nav">
-        <ul class="nav">
-            <li><a href="#">分析统计</a></li>
-            <li><a href="#">三维地球投影 </a></li>
-            <li><a href="#">地理信息化</a></li>
-            <li><a href="#">中心接受处理</a></li>
-            <li><a href="#">综合数据库</a></li>
-            <li class="go"><a href="#">禹门口灌区信息化综合系统</a></li>
-            <li><a href="Water_resources_scheduling/index.html">水资源调度</a> </li>
-            <li><a href="#">GIS工程管理</a></li>
-            <li><a href="water-meter-received/index.html">水费计收</a></li>
-            <li><a href="OA/index.html">协同办公</a></li>
-            <li><a href="#">移动应用</a></li>
-            <li><a href="#" class="yellow">系统管理</a></li>
-        </ul>
-    </div>
-<div class="content">
-    <div class="info">
-
-
-    <div class="con-left">
-        <ul class="drop one">
-            <li class="item">
-                <p>
-                <span class="cur"> 水情分析</span>
-
-                <a href="javascript:;" class="cur-right"><span class="icon up c"><i class="layui-icon">&#xe61a;</i>
-                                </span>
-                    <span class="icon bot c"><i class="layui-icon">&#xe619;</i>
-                                </span>
-                </a>
-                </p>
-                <div id="con-1" class="down c">
-                    <div id="main-1" style="width: 100%;height:500px"></div>
-
-                    <div class="liu">
-                        <p class="su">
-                            <span>流量</span> <i>|</i><span>流速</span>
-                        </p>
-                        <p class="su">
-                            <span>流量</span> <i>|</i><span>流速</span>
-                        </p>
-                    </div>
-                </div>
-                <!--<div class="liu">-->
-                    <!--<p class="su">-->
-                        <!--<span>流量</span> <i>|</i><span>流速</span>-->
-                    <!--</p>-->
-                    <!--<p class="su">-->
-                        <!--<span>流量</span> <i>|</i><span>流速</span>-->
-                    <!--</p>-->
-                <!--</div>-->
-
-            </li>
-
-        </ul>
-    </div>
-    <div class="con-mid">
-        <div class="mid-top">
-            <!--地图-->
-            <div style="width:99%;height:95%; margin:1% auto;border:#ccc solid 1px;" id="dituContent"></div>
+<div id="con">
+    <!--回顶-->
+    <!--<div id="hui">-->
+    <!--<img src="img/hui.png" title="回到顶部">-->
+    <!--</div>-->
+    <!--导航-->
+    <div id="nav">
+        <div id="na">
+            <img src="img/cai.png" id="cai">
+            <img src="img/cuo.png" id="cuo">
+            <img src="img/ping.png">
+            <img src="img/gou.png" id="wu2">
         </div>
+        <ul id="xian">
+            <li><a href="#"><img src="img/ping.png"></a></li>
+            <li><a href="./mac.html">Mac</a></li>
+            <li><a href="./ipad.html">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="./index.html">技术支持</a></li>
+            <li><a href="#"><img src="img/sou.png"></a></li>
+            <li><a href="#"><img src="img/gou.png"></a></li>
 
-        <div class="mid-bot">
-            <ul class="map">
-                <li><a href="#">地理平面图</a></li>
-                <li><a href="#">三维模型图</a></li>
+            <input type="text" placeholder="搜索 apple.com" id="sou">
+        </ul>
+    </div>
+
+<!--登录-->
+    <ul id="sign">
+        <li><img src="img/bag.png">  购物袋</li>
+        <li><img src="img/favorites.png" > 收藏</li>
+        <li><img src="img/orders.png" > 订单</li>
+        <li><img src="img/account.png" > 账户</li>
+        <li id="si2"><img src="img/signIn.png">登录</li>
+    </ul>
+
+
+    <div id="deng">
+        <h3> 请登录</h3>
+        <form action="">
+        <input type="text" placeholder="Apple ID*" required>
+        <input type="password" placeholder="密码*">
+        <span> 忘了自己的ID或密码？</span>
+        <input type="submit" value="登录" class="su"> </i>
+        </form>
+
+        <br>
+        <span id="ai">没有AppleID？立即创建一个。</span>
+
+        <p id="qu1">取消</p>
+
+    </div>
+    <div id="lu">
+        <h2>创建你的AppleID </h2>
+        <form action="" method="get" id="myForm">
+            <input type="email"  name="email2" id="email2" value="" required="required" class="email2" placeholder="name@example.com">
+            <input type="password" placeholder="密码">
+            <input type="password" placeholder="确认密码">
+            <input type="text" placeholder="姓氏">
+            <input type="text" placeholder="名字">
+            <input type="text" placeholder="出生日期">
+
+            <input type="submit" value="继续">
+        </form>
+        <p id="qu2">取消</p>
+
+    </div>
+<!--中间-->
+    <div id="mid">
+        <div id="gu_d">
+            <h2>支持</h2>
+
+            <p> 联系支持 </p>
+            <p>社区 </p>
+
+        </div>
+        <div id="mid_j">
+            <div id="mid_z">
+                <h1>欢迎使用Apple支持</h1>
+                <p>我们随时提供帮助。</p>
+                <input type="text" placeholder="搜索支持">
+                <button></button>
+                <img src="img/ji_Shu.jpg" alt="">
+            </div>
+        </div>
+        <div id="mid_z2">
+            <h1 align="center">选择一种产品</h1>
+
+            <div><img src=" img/biao.png" alt="">
+                <p>AppleWatch</p>
+            </div>
+            <div><img src=" img/shou.png" alt="">
+                <p>iPhone</p>
+            </div>
+            <div><img src=" img/ipd.png" alt="">
+                <p>iPad</p>
+            </div>
+            <div><img src=" img/mac.png" alt="">
+                <p>Mac</p>
+            </div>
+            <div><img src=" img/id.png" alt="">
+                <p>Apple ID</p>
+            </div>
+            <div><img src=" img/yin.png" alt="">
+                <p>iTunes</p>
+            </div>
+        </div>
+        <div id="chan">
+
+            <hr>
+            <h2 align="center"> 展开产品列表 <span> <img src="img/jia.png" id="dui"><img id="cu" src="img/cuo.png "></span>
+            </h2>
+            <div id="pin">
+                <ul id="yong">
+                    <li><img src="img/pay.png"></li>
+                    <li><img src="img/music.png"></li>
+                    <li><img src="img/ipod.png"></li>
+                    <li><img src="img/air.png"></li>
+                    <li><img src="img/cloud.png"></li>
+                    <li><img src="img/os.png"></li>
+                    <li><img src="img/ying.png"></li>
+                    <li><img src="img/zhuan.png"></li>
+                </ul>
+
+            </div>
+            <hr>
+        </div>
+    </div>
+    <!--//中部-->
+    <div id="med">
+        <div id="med_t">
+            <h1>支持</h1> <img src="img/xia.png" id="kai"> <img src="img/shang.png" id="guan">
+            <div id="med_p">
+                <p>社区</p>
+                <p>联系支持</p>
+            </div>
+        </div>
+        <img src="img/bei.jpg" class="bei">
+        <h1 align="center" style="font-weight: bold; font-size: larger; margin: 1rem">欢迎使用 Apple 支持</h1>
+        <p align="center" style="margin: 1rem">我们随时提供帮助。</p>
+        <button class="btn"></button>
+        <input type="text" class="ipt" placeholder="搜索支持">
+        <div id="pro">
+            <h1 align="center" style="margin: 1rem">选择一种产品</h1>
+            <ul>
+                <li><img src="img/biao.png" alt="">
+                    <p>Apple Watch </p></li>
+                <li><img src="img/shou.png" alt="">
+                    <p>iPhone</p></li>
+                <li><img src="img/ipd.png" alt="">
+                    <p>iPad</p></li>
+                <li><img src="img/mac.png" alt="">
+                    <p>Mac</p></li>
+                <li><img src="img/id.png" alt="">
+                    <p>Apple ID </p></li>
+                <li><img src="img/yin.png" alt="">
+                    <p>iTunes </p></li>
             </ul>
+            <hr>
+            <h2 align="center" style="margin: 1rem;color: #003bb3"><p id="zhan">展开产品列表</p>
+                <img src="img/jia.png" id="kai2">
+                <img src="img/cuo.png" id="guan2">
+            </h2>
+
+            <ul id="xian2">
+                <li> Apple Pay</li>
+                <li>Apple Music</li>
+                <li> iPod</li>
+                <li> AirPods</li>
+                <li>iCloud</li>
+                <li>macOS</li>
+                <li>应用</li>
+                <li>专业应用</li>
+            </ul>
+
+            <hr>
+        </div>
+        <!--/主体/-->
+        <div id="re">
+            <h1 align="center" style="font-weight: bold;margin: 1rem">热门主题</h1>
+            <img src="img/mac.png">
+            <h1 align="center" style="font-weight: bold;margin: 1rem">您是 Mac 新用户吗？</h1>
+            <p style="margin: 1rem">我们一直都很高兴迎接 Mac 新用户的加入。以下链接中的主题可帮助您开始使用 Mac。</p>
+            <p id="op2" class="op2"> 了解您的 Mac &gt;</p>
+            <img src="img/liao.jpg">
+            <h1>改用 iPhone？ </h1>
+
+            <p> 让我们帮助您设置您的 iPhone，并向您展示它提供的一些强大功能。</p>
+            <p id="op3" class="op2">了解您的 iPhone &gt;</p>
+            <h1>确保 Apple 帐户安全的技巧 </h1>
+            <p> 这里介绍了一些实用技巧，可帮助您确保 Apple ID 和帐户信息安全。</p>
+            <p id="op4" class="op2"> 获取有关确保 Apple 帐户安全的支持 &gt;</p>
+            <img src="img/suo.jpg" alt="">
+            <h1>有关 iPhone 及意外关机的信息</h1>
+            <p class="op2">了解详情 &gt;</p>
+            <img src="img/hong.png" style="width: 50%">
+            <h1>AppleCare 和保修</h1>
+            <p>由最了解您 Apple 产品的工作人员，为您提供来自 Apple 的额外保修与支持服务。
+                查明您的产品是不是仍在保修期内，或进一步了解有关购买 AppleCare 产品的信息。</p>
+            <img src="img/bao.png" class="bao">
+            <p class="op2"> 我的产品是不是仍在保修期内？&gt; </p>
+            <hr>
+            <img src="img/zhi.png" class="bao">
+            <p class="op2"> 了解 AppleCare 产品 &gt;</p>
+            <hr>
+            <img src="img/xiu.png" class="bao">
+            <p class="op2"> 管理和注册计划 &gt;</p>
+            <hr>
+
+            <img src="img/wei.png" class="bao">
+            <h1>维修和服务</h1>
+            <p>查找最方便为您的 Apple 产品获得维修的选项，或查看当前维修的进度。</p>
+            <p class="op2">
+                查看维修选项 &gt;
+            </p>
+            <p>查看已开始的 <span class="op2"> 维修的状态</span>。</p>
+            <h1>留心假冒部件</h1>
+            <p>某些假冒和第三方的电源适配器及电池可能设计不当，有可能会导致安全问题。</p>
+            <p>为了确保您在电池更换时能够获得一块正品 Apple 电池，我们建议您前往一家 <span class="op2">Apple Store </span>
+                商店或 <span class="op2"> Apple 授权服务提供商</span>。
+                如果您需要更换一个新的适配器来为您的 Apple 设备充电，我们建议您选择 Apple 的电源适配器。</p>
+            <img src="img/tian.png" class="bao">
+            <h1> Apple 支持社区</h1>
+            <p> 查找并与全球 Apple 用户共享解决方案。</p>
+            <p class="op2">
+                参与讨论 &gt;
+            </p>
+            <hr>
+            <p>联系 Apple 支持</p>
+            <h1>您需要哪方面的帮助？</h1>
+            <p>通过电话、聊天服务或电子邮件获得支持，或安排维修。</p>
+            <button>获得支持</button>
+            <img src="img/he.jpg">
+            <h1>享受免费的店内讲座。</h1>
+            <p>注册学习基础知识或提高您的技能。</p>
+            <p class="op2">
+                查找您附近的讲座 &gt;
+            </p>
+            <hr>
+            <h2>了解 Apple 在中国的服务和保修政策</h2>
+            <p class="op2">了解保修和服务选项</p>
+            <hr>
+            <h2>更换和维修扩展计划</h2>
+            <p class="op2"> 更换和维修扩展计划</p>
+            <p class="op2"> iPhone 6s 意外关机问题计划</p>
+            <p class="op2"> 适用于 iPhone 6 Plus 的 Multi-Touch 维修计划</p>
+            <p class="op2">Apple 交流电源插头转换器更换计划</p>
+            <p class="op2">Apple USB-C 充电线缆更换计划</p>
+            <p class="op2"> Beats Pill XL 扬声器召回计划</p>
+            <p class="op2">所有计划</p>
+
+        </div>
+
+    </div>
+    <!--//底部-->
+    <div id="bot_d">
+        <div id="bot">
+            <p><img src="img/apple.png"> &gt; 支持 </p>
+            <b class="bot_li" id="b22">服务和支持 </b>
+            <b class="bot_li"> 计划</b>
+            <b class="bot_li"> 资源</b>
+            <b class="bot_li"> 通讯录</b>
+            <br>
+            <strong class="bot_st"> 服务和支持 <img src="img/jia.png" id="fu_w"> <img src="img/cuo.png" id="zhi_c"></strong>
+            <ul class="bot_ul" id="bu_t1">
+                <li>免费提供的支持</li>
+                <li> 硬件保修</li>
+                <li> 软件许可协议</li>
+                <li> 服务问题解答 (FAQ)</li>
+            </ul>
+            <strong class="bot_st"> 计划 <img src="img/jia.png" id="fu_w2"> <img src="img/cuo.png" id="zhi_c2"></strong>
+            <ul id="bu_t2">
+
+                <li> Apple 培训</li>
+                <li>教育资源</li>
+            </ul>
+            <strong class="bot_st"> <img src="img/jia.png" id="fu_w3"> <img src="img/cuo.png" id="zhi_c3"> 资源</strong>
+            <ul id="bu_t3">
+
+                <li> 下载和更新</li>
+                <li> 手册</li>
+                <li> 技术规格</li>
+                <li>系统状态</li>
+                <li> 辅助功能</li>
+                <li> 支持站点地图</li>
+            </ul>
+            <strong class="bot_st"> 通讯录 <img src="img/jia.png" id="fu_w4"> <img src="img/cuo.png" id="zhi_c4"></strong>
+            <ul id="bu_t4">
+                <li> 支持电话号码</li>
+                <li> Apple 授权服务提供商</li>
+                <li> iTunes Store 支持</li>
+                <li> 联系移动运营商</li>
+            </ul>
+            <br>
+            <p class="bot_p">更多选购方式：前往 <span class="blue">Apple Store 零售店、</span>拨打 400-666-8800 或 <span
+                    class="blue">查找经销商</span>。</p>
+            <span class="bot_sp">Copyright © 2017 Apple Inc. 保留所有权利。</span>
+            <span>隐私政策</span> <b>|</b>
+            <span>使用条款</span><b>|</b>
+            <span>销售和退款</span><b>|</b>
+            <span>站点地图</span><b>|</b>
+            <span> 联系 Apple</span>
+
+            <span><img src="img/china.png" title="选区您所在的国家和地区"></span>
+            <span>中国</span>
+
+
         </div>
     </div>
-    <div class="con-right">
-        <ul class="drop one">
-            <li class="item">
-                <p>
-                <span class="cur"> 墒情分析</span>
-
-                <a href="#" class="cur-right"><span class="icon up a"><i class="layui-icon">&#xe61a;</i>
-                                </span>
-                    <span class="icon bot a"><i class="layui-icon">&#xe619;</i>
-                                </span>
-                </a>
-                </p>
-                <div id="con" class="down a">
-                    <div id="main" style="width:100%;height: 300px"></div>
-                </div>
-
-            </li>
-            <li class="item">
-                <p>
-                <span class="cur">预警信息</span>
-                <a href="javascript:;" class="cur-right"><span class="icon up b"><i class="layui-icon">&#xe61a;</i>
-                                </span>
-                    <span class="icon bot b"><i class="layui-icon ">&#xe619;</i>
-                                </span>
-                </a>
-                </p>
-                <div class="down one b">
-                    <table class="layui-table" lay-even lay-skin="nob">
-                        <colgroup>
-                            <col width="25%">
-                            <col width="30%">
-                            <col width="20%">
-                            <col width="25%">
-                        </colgroup>
-                        <thead>
-                        <tr class="blue">
-                            <th>采集设备</th>
-                            <th>预警类型</th>
-                            <th>数值</th>
-                            <th>时间</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>DATA-6311 低功耗终端</td>
-                            <td>温度溢出</td>
-                            <td>&gt;75%</td>
-                            <td>2017-11-23 16:00</td>
-                        </tr>
-                        <tr>
-                            <td>DATA-6311 低功耗终端</td>
-                            <td>温度溢出</td>
-                            <td>&gt;38%</td>
-                            <td>2017-11-23 16:00</td>
-                        </tr>
-                        <tr>
-                            <td>DATA-6311 低功耗终端</td>
-                            <td>温度溢出</td>
-                            <td>&gt;75%</td>
-                            <td>2017-11-23 16:00</td>
-                        </tr>
-                        <tr>
-                            <td>DATA-6311 低功耗终端</td>
-                            <td>温度溢出</td>
-                            <td>13.8 m/s</td>
-                            <td>2017-11-23 16:00</td>
-                        </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </li>
-
-        </ul>
-    </div>
-
-    </div>
-
-</div>
-
 </div>
 
 
-<script src="public/layui/layui.all.js"></script>
-<script src="public/js/home.js"></script>
-
-<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-        addMarker();//向地图中添加marker
-    }
-
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(110.670939,35.640647);//定义一个中心点坐标
-        map.centerAndZoom(point,13);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-        map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-        map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-        map.addControl(ctrl_sca);
-    }
-
-    //标注点数组
-    var markerArr = [{title:"禹门口",content:"黄河供水灌溉",point:"110.627533|35.666778",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-    ];
-    //创建marker
-    function addMarker(){
-        for(var i=0;i<markerArr.length;i++){
-            var json = markerArr[i];
-            var p0 = json.point.split("|")[0];
-            var p1 = json.point.split("|")[1];
-            var point = new BMap.Point(p0,p1);
-            var iconImg = createIcon(json.icon);
-            var marker = new BMap.Marker(point,{icon:iconImg});
-            var iw = createInfoWindow(i);
-            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
-            marker.setLabel(label);
-            map.addOverlay(marker);
-            label.setStyle({
-                borderColor:"#808080",
-                color:"#333",
-                cursor:"pointer"
-            });
-
-            (function(){
-                var index = i;
-                var _iw = createInfoWindow(i);
-                var _marker = marker;
-                _marker.addEventListener("click",function(){
-                    this.openInfoWindow(_iw);
-                });
-                _iw.addEventListener("open",function(){
-                    _marker.getLabel().hide();
-                })
-                _iw.addEventListener("close",function(){
-                    _marker.getLabel().show();
-                })
-                label.addEventListener("click",function(){
-                    _marker.openInfoWindow(_iw);
-                })
-                if(!!json.isOpen){
-                    label.hide();
-                    _marker.openInfoWindow(_iw);
-                }
-            })()
-        }
-    }
-    //创建InfoWindow
-    function createInfoWindow(i){
-        var json = markerArr[i];
-        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
-        return iw;
-    }
-    //创建一个Icon
-    function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
-        return icon;
-    }
-
-    initMap();//创建和初始化地图
-</script>
-
-<!--<script type="text/javascript">
-    //创建和初始化地图函数：
-    function initMap(){
-        createMap();//创建地图
-        setMapEvent();//设置地图事件
-        addMapControl();//向地图添加控件
-    }
-
-    //创建地图函数：
-    function createMap(){
-        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(110.72997,35.659918);//定义一个中心点坐标
-        map.centerAndZoom(point,14);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
-    }
-
-    //地图事件设置函数：
-    function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
-    }
-
-    //地图控件添加函数：
-    function addMapControl(){
-        //向地图中添加缩放控件
-        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-        map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-        map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-        map.addControl(ctrl_sca);
-    }
-
-
-    initMap();//创建和初始化地图
-</script>-->
 </body>
 </html>

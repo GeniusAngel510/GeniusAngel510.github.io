@@ -1,0 +1,135 @@
+.head{
+    width: 100%;
+    height: 1.4rem;
+    /*background:linear-gradient(to right,#459CFF,#1246D6);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.head p{
+color: #fff;
+    font-size: 0.31rem;
+    width: 33%;
+}
+.head p:nth-child(2){
+    text-align: center;
+}.head p:last-child{
+    text-align: right;
+ }
+
+.head p img{
+    width: 0.5rem;
+    min-width: 0.5rem;
+    margin-right: 0.3rem;
+}
+section{
+width: 100%;
+    position: relative;
+
+}
+section .percent{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%) ;
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(45deg,#fff,#F5F5F5);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .percent .ring{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*display: inline-block;*/
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+/*text-align: center;*/
+    /*vertical-align: middle;*/
+    border: 0.3rem solid #F0F0F0;
+}
+/*section .percent .ring p{*/
+   /*!* display: inline-block;*/
+    /*vertical-align: middle;*!*/
+    /*font-size: 2rem;*/
+    /*width: 1rem;*/
+    /*color: #FFB300;*/
+
+/*}*/
+section .percent .ring .long{
+    font-size: 1.8rem;
+    color: #FFB300;
+}
+section .percent .ring p{
+    width: 5rem;
+    font-size: 0.4rem;
+}
+section .percent .ring span{
+    font-size: 0.5rem;
+    color: #FFB300;
+}
+section .slider{
+    /*height: 3.3rem;*/
+    margin-bottom: 1rem;
+}
+section .slider li img{
+    width: 1.8rem;
+    min-width: 1.8rem;
+}
+section img{
+    width: 100%;
+    min-width: 100%;
+}
+section .slider li .sup{
+    position: relative;
+}
+section .slider li .cou{
+    display: inline-block;
+    width: 0.3rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    position: absolute;
+    top:0.1rem ;
+    right: 0.45rem;
+    border-radius: 50%;
+    background: #f00;
+    color: #fff;
+    text-align: center;
+    font-size: 0.25rem;
+}
+
+ul{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    width: 25%;
+    font-size: 0.35rem;
+    text-align: center;
+    padding: 0.1rem 0;
+}
+/*底部导航*/
+footer{
+    width: 100%;
+    height:1.5rem ;
+    background: #F2F3F7;
+}
+footer .nav li p{
+    font-size: 0.7rem;
+    color:#666 ;
+}
+.ac{
+    color: #2C80EC !important;
+}
+footer .nav li a{
+    color:#666 ;
+}

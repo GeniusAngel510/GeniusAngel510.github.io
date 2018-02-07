@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02信息管理-2信息添加</title>
+    <link rel="icon" href="img/index_logo.png">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+
+    <link rel="stylesheet" href="css/back.css">
+
+    <link rel="stylesheet" href="css/water_information_management.css">
+    <script src="../public/js/jquery-3.2.1.js"></script>
+  <!--  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>-->
+    <script src="../public/js/echarts.js"></script>
+</head>
+<body class="layui-layout-body">
+
+<div class="layui-side layui-bg-black">
+
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <div class="lo">
+            <img src="img/01-logo.png" alt="" class="logo">
+        </div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <li class="layui-nav-item "><a href="javascript:;">
+              首页 </a>
+                <i class="layui-icon ">&#xe602;</i>
+            </li>
+
+            <li class="layui-nav-item layui-this">
+                <a class="" href="javascript:;">
+                   水利站信息管理</a>
+                <i class="layui-icon act">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item"><a href="javascript:;">
+            用水信息发布</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                 信息查询</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    数据统计</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                   数据管理</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div class="content-top">
+        <ul class="nav-top">
+            <li class="nav-first"><a href="#">首页</a> <i>&gt;</i><a href="#">水利站信息管理</a>
+                <i>&gt;</i><a href="#">水利站信息添加</a>
+            </li>
+            <li class="nav-last">
+                <a href=""><img src="img/1-index-001.png" alt=""></a>
+                <a href=""><img src="img/1-index-002.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-->
+<div class="content">
+<h5><a href="javascript:window.history.back()" class="layui-btn layui-btn-normal light_blue ret"> 返回</a></h5>
+    <hr>
+    <form class="layui-form add" action="">
+        <div class="layui-form-item">
+            <label class="layui-form-label">水利站名称</label>
+            <div class="layui-input-block">
+                <input type="text" name="title" required  lay-verify="required" placeholder="请输入水利站名称" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">管辖地区范围</label>
+            <div class="layui-input-block">
+                <textarea name="desc" placeholder="请输入管辖地区范围,如多个请用逗号隔开" class="layui-textarea"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-block">
+                <input type="radio" name="sex" value="启用" title="启用">
+                <input type="radio" name="sex" value="禁用" title="禁用" checked>
+            </div>
+        </div>
+        <hr>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn blue" lay-submit lay-filter="formDemo">保存</button>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>
+</div>
+
+<div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+</div>
+
+<script src="../public/layui/layui.all.js"></script>
+<script src="js/back.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+    layui.use(['laypage', 'layer'], function() {
+        var laypage = layui.laypage
+            , layer = layui.layer;
+        //完整功能
+        laypage.render({
+            elem: 'demo7'
+            , count: 100
+            , layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+            , jump: function (obj) {
+                console.log(obj)
+            }
+        });
+    });
+   /* $(function () {
+        // console.log($(this).index());
+        $('.layui-nav-item').click(function () {
+
+           $(this).children('.layui-icon').show();
+
+            $(this).siblings().children('.layui-icon').hide();
+
+        })
+    })*/
+   $.nav();
+</script>
+
+</body>
+</html>

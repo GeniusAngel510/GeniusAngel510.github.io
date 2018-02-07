@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置共享人</title>
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+    <!--<link rel="stylesheet" href="css/back.css">-->
+    <link rel="stylesheet" href="css/file.css">
+    <link rel="stylesheet" href="font/icon_font.css">
+    <script src="../public/js/jquery-3.2.1.js"></script>
+</head>
+<body>
+
+<!--共享-->
+<div class="share">
+    <div class="share_left">
+        <h3>选择共享人</h3>
+        <dl>
+            <dt> <i class="iconfont icon-jian"></i>行政部</dt>
+            <dd class="show">
+                <i class="layui-icon">&#xe612;</i>
+                <span class="nam">王芳</span>
+                <span class="zhu">行政主管</span>
+                <input type="checkbox">
+            </dd>
+            <dd class="show">
+                <i class="layui-icon">&#xe612;</i>
+                <span class="nam">刘满金</span>
+                <span class="zhu">行政主管</span>
+                <input type="checkbox">
+            </dd>
+        </dl>
+        <dl>
+            <dt> <i class="iconfont icon-jia3"></i>人事部</dt>
+            <dd>
+                <i class="layui-icon">&#xe612;</i> <span class="nam">王芳</span>
+                <span  class="zhu">hr</span>
+                <input type="checkbox">
+            </dd>
+        </dl>
+
+    </div>
+    <div class="share_right layui-bg-gray">
+        <h3>已选定</h3>
+        <dl>
+            <dd> <span class="che"> </span> <a href="#"><i class="layui-icon no">&#x1006;</i></a></dd>
+            <!--<dd> <span class="che"> </span> <a href="#"><i class="layui-icon">&#x1006;</i></a></dd>-->
+
+        </dl>
+    </div>
+
+    <div class="layui-form-item">
+        <button class="layui-btn blue" lay-submit lay-filter="formDemo">共享</button>
+        <button type="button" class="layui-btn blue cancel3 ">取消</button>
+    </div>
+
+</div>
+
+
+<script src="../public/layui/layui.all.js"></script>
+<script>
+
+    //关闭iframe
+    $('.cancel3').click(function(){
+
+        //注意：parent 是 JS 自带的全局对象，可用于操作父页面
+        var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+
+        var val = $('#name').val();
+        if(val === ''){
+            parent.layer.msg('请填写标记');
+            return;
+        }
+        parent.layer.msg('取消共享啦');
+        parent.layer.close(index);
+    });
+
+    // 展开收起
+
+    $('.share').on('click','.icon-jian',function () {
+        $(this).addClass('icon-jia3');
+        $(this).removeClass('icon-jian');
+
+        $(this).parent().siblings().hide()
+
+    }) ;
+    $('.share').on('click','.icon-jia3',function () {
+        $(this).removeClass('icon-jia3');
+        $(this).addClass('icon-jian');
+
+        $(this).parent().siblings().show()
+
+    });
+
+    // 判断选中
+    $('input[type=checkbox]').click(function () {
+        if($(this).is(':checked')){
+            // alert(12)
+            $(this).siblings('.layui-icon').css('color','#1B79E0');
+            $('.che').text($(this).siblings('.nam').html());
+            $('.layui-icon.no').css('display','inline-block')
+        }else {
+            $(this).siblings('.layui-icon').css('color','#A7A7A7');
+            $('.che').text('');
+            $('.layui-icon.no').css('display','none')
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1首页</title>
+    <link rel="icon" href="images/logo_favicon.ico">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../public/js/jquery-3.2.1.js"></script>
+    <script src="../public/js/echarts.js"></script>
+</head>
+<body class="layui-layout-body">
+<!--<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">layui 后台布局</div>
+        &lt;!&ndash; 头部区域（可配合layui已有的水平导航） &ndash;&gt;
+        <ul class="layui-nav layui-layout-left">
+            <li class="layui-nav-item"><a href="">控制台</a></li>
+            <li class="layui-nav-item"><a href="">商品管理</a></li>
+            <li class="layui-nav-item"><a href="">用户</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">其它系统</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">邮件管理</a></dd>
+                    <dd><a href="">消息管理</a></dd>
+                    <dd><a href="">授权管理</a></dd>
+                </dl>
+            </li>
+        </ul>
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    贤心
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">退了</a></li>
+        </ul>
+    </div>-->
+
+<div class="layui-side layui-bg-black">
+
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <div class="lo">
+            <img src="images/1-logo.jpg" alt="" class="logo">
+        </div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <li class="layui-nav-item layui-nav-itemed"><a href="javascript:;" class="layui-this"><i class="layui-icon">&#xe68e;</i>&nbsp;系统首页</a></li>
+
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&#xe60a;</i>&nbsp;基本资料</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="basic-1.html">管理站信息</a></dd>
+                    <dd><a href="basic-2.html">渠系信息</a></dd>
+                    <dd><a href="basic-3.html">农作物信息</a></dd>
+                    <dd><a href="basic-4.html">水雨情信息</a></dd>
+                    <dd><a href="basic-5.html">模型参数</a></dd>
+                    <dd><a href="basic-6.html">数据管理</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="data-query.html"> <i class="layui-icon">&#xe615;</i> &nbsp; 数据查询</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"> <i class="layui-icon">&#xe63c;</i>&nbsp;信息中心</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="infor-1.html">添加信息</a></dd>
+                    <dd><a href="infor-2.html">信息列表</a></dd>
+                    <dd><a href="infor.html">通知信息</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="control.html"><i class="layui-icon">&#xe631;</i>&nbsp;闸泵控制</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&#xe636;</i>&nbsp;灌溉计划</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="irrigate-1.html">灌区年度用水计划</a></dd>
+                    <dd><a href="irrigate-2.html">灌季用水计划</a></dd>
+                    <dd><a href="irrigate-3.html">轮期用水计划</a></dd>
+                    <dd><a href="irrigate-4.html">管理站用水计划</a></dd>
+                    <dd><a href="irrigate-5.html">支渠适时配水计划</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&#xe62a;</i>&nbsp;用水总结</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="summary-1.html">时段用水总结</a></dd>
+                    <dd><a href="summary-2.html">轮期用水总结</a></dd>
+                    <dd><a href="summary-3.html">灌季用水总结</a></dd>
+                    <dd><a href="summary-4.html">年季用水总结</a></dd>
+                    <dd><a href="summary-5.html">管理站用水总结</a></dd>
+                </dl>
+            </li>
+            <!--<li class="layui-nav-item"><a href="">发布商品</a></li>-->
+        </ul>
+    </div>
+</div>
+
+<div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div class="content-top">
+        <ul class="nav-top">
+            <li class="nav-first"><a href="">系统首页</a></li>
+            <li class="nav-last">
+                <a href=""><img src="images/1-index-001.png" alt=""></a>
+                <a href=""><img src="images/1-index-002.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+    <div class="con_t">
+        <ul class="con-c">
+            <li>
+                <img src="images/1-index-01.png" alt="">
+                <p class="des">
+                    <span class="num">3</span>
+                    <span class="str">管理站</span>
+                </p>
+            </li>
+            <li><img src="images/1-index-02.png" alt="">
+                <p class="des">
+                    <span class="num">2</span>
+                    <span class="str">渠系脉络</span>
+                </p>
+            </li>
+            <li><img src="images/1-index-03.png" alt="">
+                <p class="des">
+                    <span class="num">5</span>
+                    <span class="str">农作物</span>
+                </p>
+            </li>
+            <li><img src="images/1-index-04.png" alt="">
+                <p class="des">
+                    <span class="num">12</span>
+                    <span class="str">模型参数</span>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="con_b">
+
+        <div class="con_b-left">
+            <ul class="con_b-t">
+                <li class="con_b-l">
+                    各管理站用水占比
+                </li>
+                <li>
+                    <select class="con_b-r l" name="">
+                        <option class="cur" selected value="第一季度">第一季度</option>
+                        <option class="cur" value="第二季度">第二季度</option>
+                        <option class="cur" value="第三季度">第三季度</option>
+                        <option class="cur" value="第四季度">第四季度</option>
+                    </select>
+                </li>
+            </ul>
+            <div id="con-t">
+                <div id="main-1" class="ruc act" style="width: 30%;height: 250px;"></div>
+                <div id="main-01" class="ruc" style="width: 30%;height: 250px;"></div>
+                <div id="main-02" class="ruc" style="width: 30%;height: 250px;"></div>
+                <div id="main-03" class="ruc" style="width: 30%;height: 250px;"></div>
+            </div>
+            <div class="cont">
+                <a href="" class="layui-btn layui-btn-primary">指定用水计划</a>
+                <a href="" class="layui-btn layui-btn-primary">查看用水总结</a>
+            </div>
+
+        </div>
+        <div class="con_b-right">
+            <ul class="con_b-t">
+                <li class="con_b-l">
+                    用水统计
+                </li>
+                <li>
+                    <select class="con_b-r" name="">
+                        <option value="管理站一">管理站一</option>
+                        <option value="管理站二">管理站二</option>
+                        <option value="管理站三">管理站三</option>
+
+                    </select>
+                </li>
+                <li>
+                    <select class="con_b-r" name="">
+                        <option value="第一季度">第一季度</option>
+                        <option value="第二季度">第二季度</option>
+                        <option value="第三季度">第三季度</option>
+                        <option value="第四季度">第四季度</option>
+                    </select>
+                </li>
+            </ul>
+            <div id="con-b">
+                <div class="lf">
+                    <div id="main-2" class="im act" style="width: 1000px;height: 300px;"></div>
+                    <div id="main-2-01" class="im" style="width: 1000px;height: 300px;"></div>
+                    <div id="main-2-02" class="im" style="width: 1000px;height: 300px;"></div>
+                    <div id="main-2-03" class="im" style="width: 1000px;height: 300px;"></div>
+                </div>
+
+                <div class="rt">
+                    <div id="main-2-04" class="im" style="width: 1000px;height: 300px;"></div>
+                    <div id="main-2-05" class="im" style="width: 1000px;height: 300px;"></div>
+                    <div id="main-2-06" class="im" style="width: 1000px;height: 300px;"></div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+
+<div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+</div>
+
+<script src="../public/layui/layui.all.js"></script>
+<script src="js/index.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+</script>
+
+<script type="text/html">
+
+// 1
+    var con_1 = document.getElementById("con-t");
+    var container_1 = document.getElementById("main-1");
+
+    var resizeContainer_1 = function () {
+//        container_3.style.width = window.innerWidth+"px";
+        container_1.style.width = con_1.clientWidth + "px";
+//        container.style.height = window.innerHeight+"px";
+        container_1.style.height = con_1.clientHeight + 'px';
+    };
+
+
+    resizeContainer_1();
+    var myChart_1 = echarts.init(container_1);
+    option_1 = {
+
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'center',
+            bottom: 'bottom',
+            data: ['管理站一', '管理站二', '管理站三']
+        },
+        series: [
+            {
+                color: ['#4BA0FF', '#FF7B8C', '#FFCD2F'],
+                name: '用水占比',
+                type: 'pie',
+                radius: ['50%', '70%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: true,
+                        textStyle: {
+                            fontSize: '30',
+                            fontWeight: 'bold'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data: [
+                    {value: 55, name: '管理站一'},
+                    {value: 26, name: '管理站二'},
+                    {value: 24, name: '管理站三'},
+
+                ]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart_1.setOption(option_1);
+    // 01
+    var con_01 = document.getElementById("con-t");
+    var container_01 = document.getElementById("main-01");
+
+    var resizeContainer_01 = function () {
+//        container_3.style.width = window.innerWidth+"px";
+        container_01.style.width = con_01.clientWidth + "px";
+//        container.style.height = window.innerHeight+"px";
+        container_01.style.height = con_01.clientHeight + 'px';
+    };
+
+
+    resizeContainer_01();
+    var myChart_01 = echarts.init(container_01);
+    option_01 = {
+
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+            orient: 'vertical',
+            x: 'center',
+            bottom: 'bottom',
+            data: ['管理站一', '管理站二', '管理站三']
+        },
+        series: [
+            {
+                color: ['#4BA0FF', '#FF7B8C', '#FFCD2F'],
+                name: '用水占比',
+                type: 'pie',
+                radius: ['50%', '70%'],
+                avoidLabelOverlap: false,
+                label: {
+                    normal: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        show: true,
+                        textStyle: {
+                            fontSize: '30',
+                            fontWeight: 'bold'
+                        }
+                    }
+                },
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                data: [
+                    {value: 50, name: '管理站一'},
+                    {value: 25, name: '管理站二'},
+                    {value: 25, name: '管理站三'},
+
+                ]
+            }
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart_01.setOption(option_01);
+
+// 01
+var con_02 = document.getElementById("con-t");
+var container_02 = document.getElementById("main-02");
+
+var resizeContainer_02 = function () {
+//        container_3.style.width = window.innerWidth+"px";
+    container_02.style.width = con_02.clientWidth + "px";
+//        container.style.height = window.innerHeight+"px";
+    container_02.style.height = con_02.clientHeight + 'px';
+};
+
+
+resizeContainer_02();
+var myChart_02 = echarts.init(container_02);
+option_02 = {
+
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'center',
+        bottom: 'bottom',
+        data: ['管理站一', '管理站二', '管理站三']
+    },
+    series: [
+        {
+            color: ['#4BA0FF', '#FF7B8C', '#FFCD2F'],
+            name: '用水占比',
+            type: 'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data: [
+                {value: 50, name: '管理站一'},
+                {value: 20, name: '管理站二'},
+                {value: 30, name: '管理站三'},
+
+            ]
+        }
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart_02.setOption(option_02);
+// 03
+// var con_1 = document.getElementById("con-t");
+var container_03 = document.getElementById("main-03");
+
+var resizeContainer_03 = function () {
+//        container_3.style.width = window.innerWidth+"px";
+    container_03.style.width = con_1.clientWidth + "px";
+//        container.style.height = window.innerHeight+"px";
+    container_03.style.height = con_1.clientHeight + 'px';
+};
+
+
+resizeContainer_03();
+var myChart_03 = echarts.init(container_03);
+option_03 = {
+
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        x: 'center',
+        bottom: 'bottom',
+        data: ['管理站一', '管理站二', '管理站三']
+    },
+    series: [
+        {
+            color: ['#4BA0FF', '#FF7B8C', '#FFCD2F'],
+            name: '用水占比',
+            type: 'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '30',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data: [
+                {value: 30, name: '管理站一'},
+                {value: 20, name: '管理站二'},
+                {value: 50, name: '管理站三'},
+
+            ]
+        }
+    ]
+};
+// 使用刚指定的配置项和数据显示图表。
+myChart_03.setOption(option_03);
+    // 2
+var con_2 = document.getElementById("con-b");
+var container_2 = document.getElementById("main-2");
+
+var resizeContainer_2 = function () {
+       // container_2.style.width = window.innerWidth+"px";
+    container_2.style.width = con_2.clientWidth + "px";
+//        container_2.style.height = window.innerHeight+"px";
+    container_2.style.height = con_2.clientHeight + 'px';
+};
+
+
+resizeContainer_2();
+var myChart_2 = echarts.init(container_2);
+
+
+var option_2 = {
+   /* title: {
+        // text: '数值',
+        textStyle: {
+            fontSize: '15',
+        }
+    },*/
+    tooltip: {
+        trigger: 'axis'
+    },
+    //代表x轴，这里type类型代表字符
+    xAxis: [{
+        type: 'category',
+        boundaryGap: false,//这里表示是否补齐空白
+        'name':'时间', //名称
+        data: ['10月1日', '10月15日', '11月1日', '11月15日', '12月1日', '12月15日', '']
+    }],
+    //代表y轴，这里type类型代表num类型
+    yAxis: [{
+
+        'type': 'value',
+        'name':'数值', //名称
+        'max': 2000,
+//            'min':0,
+//            'scale':'true',
+        //分成几段
+        'splitNumber': 4,
+        'boundaryGap': true,  // x的距离
+        'axisLabel': {	//字体
+//                margin: 20,
+            textStyle: {
+                fontStyle: 'oblique',
+                fontWeight: 800,
+                fontSize: '15px',  //0.39rem
+            }
+        }
+
+
+    }],
+    //图表类型，type表示按照什么类型图表显示，line代表折线，下面的内容与
+    //legend一一对应
+    series: [
+
+        {
+            // name: '月采购峰值',
+            type: 'line',
+
+
+            smooth: true,
+            itemStyle: {
+                normal: {
+                    //面积颜色
+                    areaStyle: {
+                        type: 'default',
+                        //                        面积颜色
+                        //    color:['#F08F8E'],
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgb(183, 217, 255)'
+                        }, {
+                            offset: 1,
+                            color: 'rgb(255, 255, 255)'
+                        }])
+                    },
+
+                    color: '#59A7FF', //圆点颜色
+//                        线条颜色
+                    lineStyle: {
+                        color: '#59A7FF'
+                    }
+
+                }
+            },
+            data: [1400, 1700, 1100, 1000, 1200, 900, 800]
+        }]
+};
+//配置图表设置并读取
+//    myChart.setOption(option);
+
+myChart_2.setOption(option_2);
+//自适应屏幕
+
+
+window.addEventListener("resize", function () {
+
+    resizeContainer_2();
+    myChart_2.resize();
+
+});
+</script>
+</body>
+</html>

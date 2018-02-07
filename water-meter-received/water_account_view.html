@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02信息管理-4用户查看</title>
+    <link rel="icon" href="img/index_logo.png">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+
+    <link rel="stylesheet" href="css/back.css">
+
+    <link rel="stylesheet" href="css/water_information_management.css">
+    <script src="../public/js/jquery-3.2.1.js"></script>
+  <!--  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>-->
+    <script src="../public/js/echarts.js"></script>
+</head>
+<body class="layui-layout-body">
+
+<div class="layui-side layui-bg-black">
+
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <div class="lo">
+            <img src="img/01-logo.png" alt="" class="logo">
+        </div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <li class="layui-nav-item "><a href="javascript:;">
+              首页 </a>
+                <i class="layui-icon ">&#xe602;</i>
+            </li>
+
+            <li class="layui-nav-item layui-this">
+                <a class="" href="javascript:;">
+                   水利站信息管理</a>
+                <i class="layui-icon act">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item"><a href="javascript:;">
+            用水信息发布</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                 信息查询</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    数据统计</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                   数据管理</a>
+                <i class="layui-icon">&#xe602;</i>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div class="content-top">
+        <ul class="nav-top">
+            <li class="nav-first"><a href="#">首页</a> <i>&gt;</i><a href="#">水利站信息管理</a>
+                <i>&gt;</i><a href="#">用户账号查看</a>
+            </li>
+            <li class="nav-last">
+                <a href=""><img src="img/1-index-001.png" alt=""></a>
+                <a href=""><img src="img/1-index-002.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-->
+<div class="content">
+<h5><a href="javascript:window.history.back()" class="layui-btn layui-btn-normal light_blue ret"> 返回</a></h5>
+    <hr>
+    <h5><a href="#" class="layui-btn layui-btn-radius layui-btn-normal light_blue ret"> 水利一站</a></h5>
+
+    <table class="layui-table">
+        <colgroup>
+            <col width="5%">
+            <col width="10%">
+            <col width="8%">
+            <col width="10%">
+            <col width="8%">
+            <col width="15%">
+            <col width="16%">
+            <col width="15%">
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>用户账号</th>
+            <th>姓名</th>
+            <th>手机号码</th>
+            <th>添加人</th>
+            <th>添加时间</th>
+            <th>备注信息</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>41001 </td>
+            <td> sll13735303438</td>
+            <td> 张晨雨</td>
+            <td>13735303438</td>
+            <td> 李琳</td>
+            <td> 2017-12-22 10:30</td>
+            <td>---</td>
+            <td>
+                <a href="#" class="layui-btn edit layui-btn-primary">编辑</a>
+                <a href="#" class="layui-btn delete layui-btn-primary">删除</a>
+            </td>
+        </tr>
+        <tr>
+            <td>41002 </td>
+            <td> sll13735303438</td>
+            <td> 张晨雨</td>
+            <td>13735303438</td>
+            <td> 李琳</td>
+            <td> 2017-12-22 10:30</td>
+            <td>---</td>
+            <td>
+                <a href="#" class="layui-btn edit layui-btn-primary">编辑</a>
+                <a href="#" class="layui-btn delete layui-btn-primary">删除</a>
+            </td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+
+</div>
+</div>
+
+<div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+</div>
+
+<script src="../public/layui/layui.all.js"></script>
+<script src="js/back.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+    layui.use(['laypage', 'layer'], function() {
+        var laypage = layui.laypage
+            , layer = layui.layer;
+        //完整功能
+        laypage.render({
+            elem: 'demo7'
+            , count: 100
+            , layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+            , jump: function (obj) {
+                console.log(obj)
+            }
+        });
+    });
+   /* $(function () {
+        // console.log($(this).index());
+        $('.layui-nav-item').click(function () {
+
+           $(this).children('.layui-icon').show();
+
+            $(this).siblings().children('.layui-icon').hide();
+
+        })
+    })*/
+   $.nav();
+</script>
+
+</body>
+</html>

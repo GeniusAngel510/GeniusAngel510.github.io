@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>02用水户信息-3用水户信息添加</title>
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/user.css">
+
+    <script src="../public/js/jquery-3.2.1.js"></script>
+
+</head>
+<body>
+<div class="content">
+    <div class="con-top">
+        <!--<img src="img/user_logo.png" class="bg" alt="">-->
+        <a href="index.html"><img src="img/user_logo.png" class="bg" alt=""></a>
+
+        <p class="right-com">
+            <a href="#"><img src="img/index-home.png" alt=""></a>
+            <a href="#" onclick="return false"><img src="img/index_off.png" alt="" title="关闭"></a>
+        </p>
+
+        <p class="info">
+            <span>信息查询</span>
+            <i class="icon-">&#xe901;</i>
+        </p>
+
+    </div>
+    <div class="con-bot">
+        <div class="con-bot-top">
+            <p class="menu">
+                <a href="#">首页</a>
+                <i>&gt;</i>
+                <a href="#">信息查询</a>
+
+            </p>
+
+            <!--<p class="menu right">
+                <button class="layui-btn layui-btn-warm"> <i class="icon-">&#xe903;</i>用水户信息添加</button>
+            </p>-->
+        </div>
+
+        <hr class="layui-bg-gray">
+        <p class="back">
+            <a href="javascript:window.history.back()" class="layui-btn layui-btn-normal">返回</a>
+        </p>
+        <div class="con-bot_bot">
+            <div class="form">
+            <!--<h2><b>用水户信息添加</b></h2>-->
+            <form class="layui-form" action="">
+
+                <div class="layui-form-item">
+                    <label class="layui-form-label">查询类型</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="sex" value="用户信息" title="用户信息" >
+                        <input type="radio" name="sex" value="缴费退费" title="缴费退费" checked>
+                        <input type="radio" name="sex" value="放水退水" title="放水退水">
+                    </div>
+                </div>
+
+                <div class="infor-query">
+                    <!--用户信息-->
+                    <div class="infor-item">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">详细类型</label>
+                            <div class="layui-input-block">
+                                <select name="city">
+                                    <option value="0">全部</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用水户编号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title"  placeholder="请输入用水编号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用水户名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title"  placeholder="请输入用水户名称" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">按管理处</label>
+                            <div class="layui-input-block">
+                                <select name="city" >
+                                    <option value="0">全部</option>
+                                    <option value="1">上海</option>
+                                    <option value="2">广州</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">时间范围</label>
+                            <div class="layui-input-block calendar">
+                                <input type="text" name="title" id="test06"  placeholder="请选择时间范围" autocomplete="off" class="layui-input">
+                                <i class="layui-icon">&#xe637;</i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--缴费退费-->
+
+                    <div class="infor-item show">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">详细类型</label>
+                            <div class="layui-input-block">
+                                <select name="city">
+                                    <option value="0">全部</option>
+                                    <option value="1">缴费</option>
+                                    <option value="2">退费</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用水户编号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title" placeholder="请输入用水编号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用水户名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title"  placeholder="请输入用水户名称" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">按管理处</label>
+                            <div class="layui-input-block">
+                                <select name="city" >
+                                    <option value="0">全部</option>
+                                    <option value="1">上海</option>
+                                    <option value="2">广州</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">时间范围</label>
+                            <div class="layui-input-block calendar">
+                                <input type="text" name="title" id="test6"  placeholder="请选择时间范围" autocomplete="off" class="layui-input">
+                                <i class="layui-icon">&#xe637;</i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--放水退水-->
+                    <div class="infor-item ">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">详细类型</label>
+                            <div class="layui-input-block">
+                                <select name="city">
+                                    <option value="0">全部</option>
+                                    <option value="1">放水</option>
+                                    <option value="2">退水</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用水户编号</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title"  placeholder="请输入用水编号" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">用水户名称</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="title"  placeholder="请输入用水户名称" autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">按管理处</label>
+                            <div class="layui-input-block">
+                                <select name="city" >
+                                    <option value="0">全部</option>
+                                    <option value="1">上海</option>
+                                    <option value="2">广州</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">时间范围</label>
+                            <div class="layui-input-block calendar">
+                                <input type="text" name="title" id="test-6" placeholder="请选择时间范围" autocomplete="off" class="layui-input">
+                                <i class="layui-icon">&#xe637;</i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-input-block res">
+                        <a href="information-inquiry_result.html"><button class="layui-btn blue_" type="button" lay-submit lay-filter="formDemo">查 询</button></a>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../public/layui/layui.all.js"></script>
+<script src="js/inquire.js"></script>
+
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+    // 时间
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+        //日期范围
+        laydate.render({
+            elem: '#test6'
+            ,range: true
+        });
+        laydate.render({
+            elem: '#test06'
+            ,range: true
+        });
+        laydate.render({
+            elem: '#test-6'
+            ,range: true
+        });
+    });
+    // 分页
+    layui.use('laypage', function(){
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        //完整功能
+        laypage.render({
+            elem: 'demo7'
+            ,count: 100
+            ,layout: ['count', 'prev', 'page', 'next', 'limit', 'skip']
+            ,jump: function(obj){
+                console.log(obj)
+            }
+        });
+    });
+</script>
+</body>
+</html>

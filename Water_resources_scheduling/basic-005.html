@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2基础资料-8</title>
+    <link rel="icon" href="images/logo_favicon.ico">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+    <link rel="stylesheet" href="../public/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/Back.css">
+    <link rel="stylesheet" href="css/basic-8.css">
+    <script src="../public/js/jquery-3.2.1.js"></script>
+    <script src="../public/js/jquery.tabledit.js"></script>
+    <script src="../public/js/echarts.js"></script>
+</head>
+<body class="layui-layout-body">
+
+<div class="layui-side layui-bg-black">
+
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+        <div class="lo">
+            <img src="images/1-logo.jpg" alt="" class="logo">
+        </div>
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <li class="layui-nav-item "><a href="javascript:;"><i class="layui-icon">&#xe68e;</i>&nbsp;系统首页</a></li>
+
+            <li class="layui-nav-item layui-nav-itemed">
+                <a class="" href="javascript:;"><i class="layui-icon">&#xe60a;</i>&nbsp;基本资料</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">管理站信息</a></dd>
+                    <dd><a href="javascript:;">渠系信息</a></dd>
+                    <dd><a href="javascript:;">农作物信息</a></dd>
+                    <dd><a href="javascript:;">水雨情信息</a></dd>
+                    <dd><a href="javascript:;"class="layui-this">模型参数</a></dd>
+                    <dd><a href="javascript:;">数据管理</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href=""> <i class="layui-icon">&#xe615;</i> &nbsp; 数据查询</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"> <i class="layui-icon">&#xe63c;</i>&nbsp;信息中心</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">添加信息</a></dd>
+                    <dd><a href="javascript:;">信息列表</a></dd>
+                    <dd><a href="">通知信息</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href=""><i class="layui-icon">&#xe631;</i>&nbsp;闸泵控制</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&#xe636;</i>&nbsp;灌溉计划</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">灌区年度用水计划</a></dd>
+                    <dd><a href="javascript:;">灌季用水计划</a></dd>
+                    <dd><a href="">轮期用水计划</a></dd>
+                    <dd><a href="">管理站用水计划</a></dd>
+                    <dd><a href="">支渠适时配水计划</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;"><i class="layui-icon">&#xe62a;</i>&nbsp;用水总结</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">时段用水总结</a></dd>
+                    <dd><a href="javascript:;">轮期用水总结</a></dd>
+                    <dd><a href="">灌季用水总结</a></dd>
+                    <dd><a href="">年季用水总结</a></dd>
+                    <dd><a href="">管理站用水总结</a></dd>
+                </dl>
+            </li>
+            <!--<li class="layui-nav-item"><a href="">发布商品</a></li>-->
+        </ul>
+    </div>
+</div>
+
+<div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div class="content-top">
+        <ul class="nav-top">
+            <li class="nav-first"><a href="">基础资料</a> <i>&nbsp; &gt;&nbsp;</i> <a href="">模型参数</a></li>
+            <li class="nav-last">
+                <a href=""><img src="images/1-index-001.png" alt=""></a>
+                <a href=""><img src="images/1-index-002.png" alt=""></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--内容-->
+    <div class="con">
+        <table class="layui-table" id="example1">
+            <colgroup>
+                <col width="20%">
+                <col width="70%">
+                <col width="10%">
+            </colgroup>
+            <thead>
+            <tr>
+                <th class="gb" colspan="3">径流量预报信息</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>预计来水年径流</td>
+                <td>
+                    <p class="sm">
+                    <span>序列长度/a:</span> <span> <input class="se1" type="number" value="55"></span>
+                    </p>
+                    <p class="sm">
+                    <span>最小值:</span> <span> <input type="number" class="se1" value="1.09"></span>
+                    </p>
+                    <p class="sm">
+                    <span>最大值:</span> <span> <input type="number" class="se1" value="14.65"></span>
+                    </p>
+                    <p class="sm">
+                    <span>均值:</span> <span> <input type="number" class="se1" value="6.14"></span>
+                    </p>
+                    <p class="sm">
+                    <span>变异系数:</span> <span> <input class="se1" type="number" value="0.541"></span>
+                    </p>
+
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary b te1">保存</button>
+                    <button class="layui-btn layui-btn-primary  et1">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td>灌区需水量</td>
+                <td>
+                        <p > <span>m &sup3;/亩:<input type="number" disabled class="se dis" value="560"></span>  </p>
+
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary et ">编辑</button>
+                    <button class="layui-btn layui-btn-primary te b">保存</button>
+                </td>
+            </tr>
+            <tr>
+                <td>近三年实际完成水量均值</td>
+                <td>
+                    <p>
+                        <span>冬灌:</span>
+                        <span>70 m &sup3;/亩</span>
+                    </p>
+                    <p>
+                        <span>春灌:</span>
+                        <span>70 m &sup3;/亩</span>
+                    </p>
+                    <p>
+                        <span>下灌:</span>
+                        <span>70 m &sup3;/亩</span>
+                    </p>
+
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td>灌季用水比例</td>
+                <td>
+                    <p>
+                        <span>冬灌:</span>
+                        <span>23%</span>
+                    </p>
+                    <p>
+                        <span>春灌:</span>
+                        <span>27%</span>
+                    </p>
+                    <p>
+                        <span>下灌:</span>
+                        <span>50%</span>
+                    </p>
+
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="gb" colspan="3">作物灌溉制度</td>
+            </tr>
+            <tr>
+                <td>作物需水量</td>
+                <td>
+                    <p>
+                        <span>玉米:</span>
+                        <span>55 m &sup3;/亩</span>
+                    </p>
+                    <p>
+                        <span>山药:</span>
+                        <span>50 m &sup3;/亩</span>
+                    </p>
+                    <p>
+                        <span>小麦:</span>
+                        <span>60 m &sup3;/亩</span>
+                    </p>
+                    <p>
+                        <span>丹参:</span>
+                        <span>50 &sup3;/亩</span>
+                    </p>
+                    <p>
+                        <span>西瓜:</span>
+                        <span>75 &sup3;/亩</span>
+                    </p>
+
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td>气候特性</td>
+                <td>
+                    <p>
+                        <span>气候:</span>
+                        <span>半湿润大陆性季风气候</span>
+                    </p>
+                    <p>
+                        <span>冬季平均温度:</span>
+                        <span>2℃
+                            <!--上下标-->
+                        <!--10<sup>3</sup> 100<sub>3</sub>-->
+                        </span>
+                    </p>
+                    <p>
+                        <span>春季平均温度:</span>
+                        <span>14℃
+                        </span>
+                    </p>
+                    <p>
+                        <span>冬季平均温度:</span>
+                        <span>25℃
+                        </span>
+                    </p>
+
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    土壤特性
+                </td>
+                <td>
+                    <p>
+                        <span>土壤:</span>
+                        <span>属褐土，肥力较厚</span>
+                    </p>
+                    <p>
+                        <span>土壤最佳平均灌水量:</span>
+                        <span>70 m &sup3;/亩/年</span>
+                    </p>
+                    <p>
+                        <span>土壤最佳总灌水量:</span>
+                        <span>420 m &sup3;/亩</span>
+                    </p>
+                </td>
+            <td class="cen">
+                <button class="layui-btn layui-btn-primary">编辑</button>
+            </td>
+            </tr>
+            <tr class="gb">
+                <td colspan="3">斗口水量</td>
+            </tr>
+            <tr>
+                <td>管理站一</td>
+                <td>
+                    <p>1000万</p>
+                </td>
+            <td class="cen">
+                <button class="layui-btn layui-btn-primary">编辑</button>
+            </td>
+            </tr>
+            <tr>
+                <td>管理站二</td>
+                <td>
+                    <p>1000万</p>
+                </td>
+            <td class="cen">
+                <button class="layui-btn layui-btn-primary">编辑</button>
+            </td>
+            </tr>
+            <tr class="gb">
+                <td colspan="3"> 往期灌溉面积分配</td>
+            </tr>
+            <tr>
+                <td>管理站一</td>
+                <td>
+                    <p>5000亩</p>
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+            <tr>
+                <td>管理站二</td>
+                <td>
+                    <p>16000亩</p>
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+            <tr class="gb">
+                <td colspan="3"> 水利用系数</td>
+            </tr>
+            <tr>
+                <td>各渠道水利用系数</td>
+                <td>
+                    <p>
+                       <span>干:</span>
+                       <span>0.68</span>
+                    </p>
+                    <p>
+                       <span>支一:</span>
+                       <span>0.70</span>
+                    </p>
+                    <p>
+                       <span>支二:</span>
+                       <span>0.70</span>
+                    </p>
+                    <p>
+                        <span>斗:</span>
+                        <span>0.69</span>
+                    </p>
+                    <p>
+                        <span>农:</span>
+                        <span>0.78</span>
+                    </p>
+                    <p>
+                        <span>毛:</span>
+                        <span>0.69</span>
+                    </p>
+                </td>
+                <td class="cen">
+                    <button class="layui-btn layui-btn-primary">编辑</button>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+</div>
+
+<script src="../public/layui/layui.all.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+    $(function () {
+        // 编辑
+        console.log($('.dis'));
+
+        $('.et').click(function () {
+            $('.te').css('display','block');
+            $('.et').css('display','none');
+            $('.se').removeAttr('disabled');
+            $('.se').removeClass('dis')
+        });
+        //保存
+        $('.te').click(function () {
+            $('.et').css('display','block');
+            $('.te').css('display','none');
+            $('.se').attr('disabled','disabled');
+            $('.se').addClass('dis')
+           /* $('.se').css({'border':'none','background':'none','box-shadow':'none'})*/
+        });
+        // 编辑
+        console.log($('.dis'));
+
+        $('.et1').click(function () {
+          /*  $(function () {
+                $('.cen').css('text-align','center')
+            })*/
+
+            $('.te1').css('display','block');
+            $('.et1').css('display','none');
+            $('.se1').removeAttr('disabled');
+            $('.se1').removeClass('dis');
+
+            // $('.cen').css('text-align','center')
+        });
+        //保存
+        $('.te1').click(function () {
+           /* $(function () {
+                $('.cen').css('text-align','center')
+            })*/
+            $('.et1').css('display','block');
+            $('.te1').css('display','none');
+            $('.se1').attr('disabled','disabled');
+            $('.se1').addClass('dis');
+
+           /* $('.se').css({'border':'none','background':'none','box-shadow':'none'})*/
+        });
+
+        // 编辑表格
+        /*$('#example1').Tabledit({
+            url: 'example.php',
+            columns: {
+                identifier: [0, 'id'],
+                editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname'],[4, 'nickname'], [5, 'firstname'], [6, 'lastname']]
+            }
+        });*/
+    })
+</script>
+
+</body>
+</html>

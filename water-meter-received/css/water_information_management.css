@@ -1,0 +1,144 @@
+.layui-form{
+    width: 95%;
+    margin: 20px auto;
+}
+.light_blue{
+    background: #D5E9FF;
+    border: 1px solid #AAD2FF;
+    color: #59A8FF;
+}
+.blue{
+    background: #0066CC;
+
+}
+.layui-input-left{
+    display: inline-block;
+    width: 60%;
+    float: left;
+}
+.layui-input-inline.inquire{
+    width: 100px;
+}
+.layui-input-right{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    float: left;
+}
+.layui-input-inline.add{
+    width: 170px;
+    float: none;
+}
+
+.layui-input-inline.add .layui-btn .layui-icon {
+     color: white;
+}
+/*表*/
+.layui-table{
+    width: 95%;
+    margin: 20px auto;
+}
+.layui-table td, .layui-table th{
+    padding: 9px;
+}
+.layui-table tr th{
+    background: #E4EFF5;
+    color: #333;
+}
+.layui-table tr td {
+    color: #555;
+}
+.layui-table tr:nth-child(odd) {
+    background: #FFF;
+}
+.layui-table tr:nth-child(even) {
+    background: #F4F8FB;
+}
+.layui-table tr td .layui-btn{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.layui-table tr td .layui-btn.view{
+    color: #999;
+    border: 1px solid #9A9A9A;
+}
+.layui-table tr td .layui-btn.edit{
+    color: #FF9900;
+    border: 1px solid #FF9A02;
+}
+
+/*分页*/
+.page{
+    width: 90%;
+    margin: 30px auto;
+}
+.page .layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background-color: #6FB4FF;
+}
+
+/*水站信息添加*/
+.content h5 {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.layui-form.add .layui-form-item{
+    width: 50%;
+}
+.layui-form.add .layui-form-label{
+    width: 100px;
+ }
+.layui-form.add .layui-input-block{
+    margin-left: 130px;
+ }
+.layui-form-radio>i:hover, .layui-form-radioed>i{
+    color: #0066CC;
+}
+.layui-btn.ret:hover{
+    color: #59A8FF;
+    opacity: .9;
+}
+.description{
+    font-size: 12px;
+    color: #59A8FF;
+}.description span{
+     margin-left: 80px;
+ }
+ /*查看*/
+.layui-table tr td .layui-btn.delete{
+    color: #EB4863;
+    border: 1px solid #EB4964;
+}
+
+/*新增用水信息*/
+
+.layui-form.add .layui-input-block.price{
+   position: relative;
+}
+.layui-form.add .layui-form-mid{
+    background: #E9E9E9;
+    width: 50px;
+    border: 1px solid #D8D8D8;
+    padding: 8px!important;
+    position: absolute;
+    right:-10px;
+    text-align: center;
+    top: 0;
+}
+/*编辑器*/
+ #container{
+     min-height: 300px;
+ }
+ /*下拉*/
+.select2-container {
+    width: 100% !important;
+
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+    border: 1px solid #E6E6E6 !important;
+}
+
+/*input::placeholder{
+    color: #D8D8D8;
+}*/

@@ -1,0 +1,9 @@
+{
+  "name": "Water_resources_scheduling",
+  "version": "0.0.1",
+  "dependencies": {
+    "name":"ta",
+    "age":15,
+    "job":"computer"
+  }
+}

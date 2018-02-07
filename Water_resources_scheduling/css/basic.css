@@ -1,0 +1,192 @@
+.layui-nav .layui-this{
+    color: white !important;
+}
+
+.con{
+    width: 90%;
+    height:auto;
+    /*height:70%;*/
+    background: #FFF;
+    border-radius: 5px;
+    margin: 3%;
+}
+.con h3{
+    color: #005ED8;
+    padding: 3% 5%;
+}
+.layui-form{
+    width: 50%;
+    font-size: 12px;
+    /*border: 1px solid #000;*/
+    margin-left: 5%;
+}
+.layui-form-radio span{
+    font-size: 12px;
+}
+.layui-form-radio i:hover, .layui-form-radioed i{
+    color: #156FDD;
+}
+.layui-form-radio i{
+    font-size: 15px;
+}
+.layui-form .layui-form-label{
+    color: #333;
+    font-weight: 600;
+}
+.layui-form.sub .layui-btn{
+    background: #005ED8;
+}
+.layui-table{
+    width: 90%;
+    margin:0 auto;
+}
+.layui-table tr>th {
+    color: #333;
+}
+.layui-table td, .layui-table th{
+    font-size: 12px;
+    padding: 5px;
+    color: #555;
+}
+
+.layui-table.mod td .layui-btn{
+    border: 1px solid #FF9A02;
+    color: #FF9A02;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 10px;
+    font-size: 10px;
+    
+}
+.layui-table td:last-child,th:last-child{
+    text-align: center;
+}
+#tab{
+    width: 90%;
+    height:auto;
+    /*border: 1px solid red;*/
+    position: relative;
+}
+#tab .con{
+    width: 100%;
+}
+#tab .til{
+    zoom: 1;
+    margin-left: 3%;
+    margin-top: 3%;
+ }
+#tab .til:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+ }
+#tab .til li{
+    width: 20%;
+    float: left;
+}
+#tab .til li a{
+    width: 80%;
+}
+#tab .til li .layui-btn{
+    color: #45B3FD;
+    border: 1px solid #45B3FD;
+}
+#tab .til li .act{
+    color: white;
+    background: #0099FF;
+    border: none;
+}#tab .layui-badge-dot{
+  margin:0 5%;
+}
+ #tab .tab-con{
+     display: none;
+ }#tab .tab-con.act{
+     display: block;
+ }
+#tab .tab-con{
+    border: 1px solid transparent;
+    /*border: 1px solid green;*/
+}
+#tab .tab-con .layui-table{
+    margin: 5% auto;
+ }
+#tab .tab-con .layui-form{
+    margin: 5% 0;
+ }
+#tab .tab-con .layui-form-checked[lay-skin=primary] i {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+}#tab .layui-form-checkbox[lay-skin=primary] span {
+    font-size: 12px;
+}#tab .layui-form.min{
+    width: 80%;
+  }
+
+#tab .layui-form-checked[lay-skin=primary] i{
+    color:#005ED8 ;
+    border-color:#005ED8;
+    background: #FFF;
+}
+
+#tab .page{
+    width: 90%;
+    margin: auto;
+}
+.bl{
+    background: #005ED8;
+}
+#tab .layui-form.fid{
+    width: 100%;
+    margin: auto;
+}
+#tab .layui-form.resul{
+
+    margin: 20px auto;
+}
+/*#tab .layui-form.resul .layui-form-item{*/
+    /*border: 1px solid #000;*/
+/*}*/
+#tab .layui-form.resul .layui-input-inline{
+    /*border: 1px solid #f00;*/
+    width: 70%;
+}
+#tab .layui-form.fid .layui-form-item{
+    width: 50%;
+    margin:2% auto;
+}
+#tab .cen{
+    display: block;
+    margin: auto;
+}
+#tab .layui-table.info{
+    margin: 0 0 0 5%;
+}
+#tab .layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background: #0097E2;
+}
+#tab .save{
+    width: 25%;
+    /*border: 1px solid #000;*/
+    text-align: center;
+    position: absolute;
+    right: -5%;
+    top: 1%;
+}#tab .save .print{
+    display: inline-block;
+     background: #FFF;
+    border-radius: 5px;
+    color:#0F81FF;
+    padding:5px 10px;
+    width: 30%;
+ }
+
+ .data{
+     width: 90%;
+     margin: 5% auto;
+     /*border: 1px solid #000;*/
+ }
+.data .layui-btn{
+    background: #005ED8;
+}

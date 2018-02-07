@@ -1,0 +1,134 @@
+.blue {
+    background: #0066CC;
+}
+
+.blue_hor {
+    background: #0066CC;
+    opacity: .5;
+    transition: 0.5s;
+    filter: alpha(opacity=50);
+}
+
+.blue_hor:hover {
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+
+.layui-table th, .layui-table td {
+    font-size: 12px;
+}
+
+.layui-form.staff {
+    width: 100%;
+}
+
+.layui-form.per {
+    width: 95%;
+    margin: auto;
+}
+
+.layui-table.per {
+    width: 95%;
+    margin: auto;
+}
+
+.layui-form-item.left {
+    display: inline-block;
+    width: 50%;
+    /*border: 1px solid #000;*/
+}
+
+.layui-form-item.right {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    /*border: 1px solid #000;*/
+}
+
+.layui-form-item.right .key {
+    display: inline-block;
+
+}
+
+.layui-form-item.right .key .layui-form-label {
+    display: inline-block;
+    float: none;
+}
+
+.layui-form-item.right .key .layui-input-inline {
+    display: inline-block;
+    float: none;
+}
+
+/*通讯录*/
+.layui-form._new {
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+}
+
+.layui-form._new .layui-input-inline.new {
+    width: 55%;
+}
+
+.search_results {
+    width: 96%;
+    margin: 20px auto;
+}
+
+.light {
+    background: #E4EFF5;
+}
+
+.search_results > .search_right .layui-table tr td .layui-btn {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.orange {
+    color: #FF9A02;
+}
+
+.search_results > .search_right .layui-table tr td .layui-btn.complete {
+    border: 1px solid #3ECA81;
+    color: #3ECA81;
+
+}
+
+.search_results > .search_right .layui-table tr td .layui-btn.edit {
+    border: 1px solid #FF9A02;
+    color: #FF9A02;
+
+}
+
+.search_results > .search_right .layui-table tr td .layui-btn.delete {
+    border: 1px solid #D14E65;
+    color: #D14E65;
+}
+
+.layui-table.work td, .layui-table.work th {
+    padding: 9px 5px;
+}
+
+._blue {
+    color: #5485D1;
+}
+
+.layui-input-inline._new {
+    width: 28%;
+}
+
+/*隔行变色*/
+table th {
+    background: #E4EFF5;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #FFF;
+}
+
+table tbody tr:nth-child(even) {
+    background: #F4F8FB;
+}

@@ -1,0 +1,59 @@
+html,body{
+    background: #F0F4F9;
+}
+.content{
+    width: 100%;
+    height: auto;
+
+}
+.content .con-top{
+    position: relative;
+}
+.content .con-top .right-com{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.content .con-top .bg{
+    width: 100%;
+}
+.content .con-bot{
+    background: #F0F4F9;
+    padding: 50px 0;
+}
+.content .con-bot .bot-nav{
+    width: 60%;
+    margin: auto;
+    /*border: 1px solid #000;*/
+    zoom: 1;
+}
+.content .con-bot .bot-nav:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.content .con-bot .bot-nav li{
+    width: 20%;
+    float: left;
+    color: #5D5D5E;
+    font-size: 20px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    transition: 1s;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px 0;
+}
+.content .con-bot .bot-nav li p{
+    font-size: 100px;
+    color: #5D5D5E;
+    transition: 1s;
+}
+.content .con-bot .bot-nav li p:hover{
+    color: #6FB4FC;
+}
+.content .con-bot .bot-nav li:hover{
+    color: #6FB4FC;
+    background: #fff;
+}

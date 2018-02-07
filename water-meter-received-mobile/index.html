@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01首页</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="../public/js/jquery-3.2.1.js"></script>
+    <script src="js/index.min.js"></script>
+</head>
+<body>
+
+
+<section>
+    <div class="head">
+        <p> </p>
+        <p>水 费 计 收</p>
+        <p><img src="img/cai.png" alt=""></p>
+    </div>
+    <img src="img/index_bei.png" alt="">
+    <div class="percent">
+        <div class="ring">
+            <span class="long">82 </span><span>%</span>
+            <!--<p>收水费情况占比</p>-->
+        </div>
+
+    </div>
+    <ul class="slider">
+        <li><a href="collect-fees.html">
+            <p><img src="img/index-collect-fees.png" alt=""></p>
+            收水费</a></li>
+        <li><a href="#">
+            <p class="sup"><img src="img/index-return_fee.png" alt="">
+            <span class="cou">2</span>
+            </p>
+            退水费</a></li>
+        <li><a href="#">
+            <p><img src="img/index-drain.png" alt=""></p>放水</a></li>
+        <li><a href="#">
+            <p><img src="img/index-back_water.png" alt=""></p>
+            退水</a></li>
+    </ul>
+
+</section>
+<footer>
+    <ul class="nav">
+        <li><a href="#" class="ac"><p class="icon-home-2"></p>首页</a></li>
+        <li><a href="#"><p class="icon-user"></p>用户信息</a></li>
+        <li><a href="#"><p class="icon-big"></p>信息查询</a></li>
+        <li><a href="#"><p class="icon-count"></p>辅助计算</a></li>
+    </ul>
+
+</footer>
+
+
+
+<script src="../public/layui/layui.all.js"></script>
+<script src="js/home.js"></script>
+
+<script>
+    //JavaScript代码区域
+    layui.use('element', function () {
+        var element = layui.element;
+
+    });
+    nav._nav();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+#tab{
+    width: 90%;
+    height:auto;
+    /*border: 1px solid red;*/
+    position: relative;
+    margin: 2% 3%;
+}
+
+#tab .save{
+    width: 25%;
+    /*border: 1px solid #000;*/
+    text-align: center;
+    position: absolute;
+    right: -2%;
+    top: 0.5%;
+}#tab .save .print{
+     display: inline-block;
+     background: #FFF;
+     border-radius: 5px;
+     color:#0F81FF;
+     padding:5px 10px;
+     width: 30%;
+ }
+#tab .til{
+    zoom: 1;
+    /*margin-left: 2%;*/
+    margin-top: 3%;
+    /*border: 1px solid #000;*/
+}
+#tab .til:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+#tab .til li{
+    width: 20%;
+    float: left;
+}
+#tab .til li a{
+    width: 80%;
+}
+#tab .til li .layui-btn{
+    color: #45B3FD;
+    border: 1px solid #45B3FD;
+}
+#tab .til li .act{
+    color: white;
+    background: #0099FF;
+    border: none;
+}#tab .layui-badge-dot{
+     margin:0 5%;
+ }
+#tab .con{
+    width: 100%;
+    background: #FFF;
+    /*border: 1px solid #000;*/
+    margin:2% 0;
+    border-radius: 5px;
+}
+#tab .tab-con{
+    display: none;
+}#tab .tab-con.act{
+     display: block;
+ }
+#tab .tab-con{
+    border: 1px solid transparent;
+    /*border: 1px solid green;*/
+}
+.layui-table tr>th {
+    color: #333;
+}
+.layui-table{
+    width: 90%;
+    margin:1% auto;
+}
+.layui-table.mod tr td{
+    text-align: center;
+}
+.plan{
+    display: inline-block;
+    width: 21%;
+    padding: 10px;
+    background: #EEE;
+    border-radius: 3px;
+    border: 1px solid #E3E3E3;
+    cursor: pointer;
+    margin: 1% 0;
+    text-align: left;
+}
+.plan span{
+    font-size: 12px;
+}
+.layui-form.yea.layui-form-item{
+    text-align: center;
+}
+.layui-form.yea .layui-form-item .layui-input-inline{
+    float: none;
+}
+.layui-form.yea  .layui-btn{
+    background: #005ED8;
+}
+/*生成*/
+.Water{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+}
+.water-t{
+    width: 100%;
+    background: #F2F2F2;
+    border-radius: 5px;
+    text-align: center;
+}
+.water-t h1{
+    color: #005ED8;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5% 0 1%;
+}.water-t h2{
+    color: #005ED8;
+    font-size: 12px;
+    font-weight: bold;
+    padding:1% 0 ;
+}
+.water-t p{
+    padding: 1% 0 5%;
+    color: #999;
+}
+.water-m{
+    width: 90%;
+    margin: 1% auto;
+    border: 1px solid #DDD;
+    box-shadow: -1px -1px 1px #BEBEBE;
+
+}
+.water-m p{
+    font-size: 12px;
+    width: 95%;
+    margin: auto;
+    text-indent: 30px;
+    line-height: 25px;
+    padding: 1% 0;
+    color: #005ED8;
+}
+.water-me{
+    width: 90%;
+    margin: 1% auto;
+    /*border: 1px solid #DDD;*/
+    /*box-shadow: -1px -1px 1px #BEBEBE;*/
+
+}
+.water-me p{
+    font-size: 12px;
+    width: 95%;
+    margin: auto;
+    text-indent: 30px;
+    line-height: 25px;
+    padding: 1% 0;
+    color: #666;
+}
+.layui-table.info{
+
+}
+.layui-table.info tr th,.layui-table.info tr td{
+    font-size: 12px;
+
+}.layui-table.info tr td:first-child{
+     background: #F2F2F2;
+ }
+.layui-table.info tr td input{
+width: 60%;
+    height: 20px;
+    border: 1px solid #DDD;
+    box-shadow: -1px -1px 1px #BEBEBE;
+    border-radius: 3px;
+    color:#005ED8 ;
+    text-indent: 10px;
+}
+.Piece{
+    width: 30%;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    margin: 0 1%;
+
+}
+.Piece span{
+    margin-right: 3px;
+}
+.edit{
+    text-align: center;
+    margin: 5% auto;
+}
+/*弹框*/
+.box .layui-table tr td:first-child{
+    color: #005ED8;
+}
+.box .layui-table tr td p{
+    display: inline-block;
+    line-height: 30px;
+    margin-left:
+            5%;
+}.box .layui-btn{
+    padding: 0 5px;
+    height: 30px;
+    line-height: 20px;
+ }
+
+.box .layui-btn.sure{
+    display: block;
+    margin: 5% auto;
+    width: 10%;
+    background: #005ED8;
+}
+
+/*历史*/
+.con .layui-form.his .layui-form-label{
+    padding: 9px 2px;
+    width: 35%;
+    /*border: 1px solid red;*/
+}
+.con .layui-form.his .layui-form-item{
+    display: inline-block;
+    width: 19%;
+    /*border: 1px solid green;*/
+}.con .layui-form.his .layui-input-inline{
+     width: 55%;
+     /*border: 1px solid blue;*/
+ }
+.con .layui-form.his .layui-btn.find{
+    /*width: 10%;*/
+    background: #005ED8;
+}
+.con .layui-form.his{
+    margin: 3% auto;
+    /*border: 1px solid #000;*/
+    width: 90%;
+}
+.con .layui-form.his .layui-form-item.wite{
+    width:40% ;
+    /*margin-left: 5%;*/
+    /*border: 1px solid red;*/
+}
+.con .layui-form.his .layui-input-inline.wite{
+    width:30% ;
+    /*border: 1px solid blue;*/
+}
+.con .layui-form.his .layui-form-label.wite{
+    width:25% ;
+    /*border: 1px solid green;*/
+}
+.con .layui-form.his .layui-form-label.wite2{
+    width:2% ;
+    margin-left: -3%;
+}
+
+#tab .page{
+    width: 90%;
+    margin: auto;
+}
+/*#tab .layui-form.fid{
+    width: 100%;
+    margin: auto;
+}*/
+/*分页*/
+#tab .layui-laypage .layui-laypage-curr .layui-laypage-em{
+    background: #0097E2;
+}
+.layui-btn.ok{
+    height: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 20px;
+    color:#FF9A02 ;
+    border: 1px solid #FF9A02 ;
+}
+.layui-btn.no{
+    height: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 20px;
+    color:#CC3535;
+    border: 1px solid #CC3535 ;
+}
+.ble{
+    background: #005ED8;
+}
+/*轮期*/
+.con .layui-form.gen{
+    width: 90%;
+    margin: 3% auto;
+}
+/*.con .layui-form.gen .layui-btn{
+    display: block;
+    !*width: 10%;*!
+    margin: 3% auto;
+}*/
+/**
+7
+ */
+.oge{
+    color: #FF6600;
+}
+.oe{
+    background: #FFE8C6 !important;
+}
+/*5*/
+.tab-con h3{
+    color: #005ED8;
+    margin: 2%;
+}
+.tab-con .layui-table tr th,.layui-table tr td{
+    font-size: 12px;
+}
+.tab-con .layui-table.Hap tr th,.layui-table.Hap tr td{
+    padding: 2px;
+    font-size: 10px;
+}
+.tab-con .layui-table.Hap{
+     width:95%;
+}
+.layui-btn.see{
+    height: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 20px;
+
+}
+.layui-btn.need_water{
+    width: 40%;
+    height: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 20px;
+    background: #005ED8;
+}
+.other{
+    height: 20px;
+    font-size: 12px;
+    padding: 0 10px;
+    line-height: 20px;
+    color: #005ED8;
+    background: #FFF;
+    border: 1px solid #005ED8;
+
+}
+.other:hover{
+    color: #005ED8;
+}
+.box-slide{
+    position: relative;
+}
+
+.slide{
+    /*border-width: 5px;*/
+    /*border-style: solid;*/
+    /*border-color: red green blue;*/
+    text-align: center;
+    display: none;
+    width: 90%;
+    height: auto;
+    color: #333;
+    border-radius: 3px;
+    background: #FFF;
+    border: 1px solid;
+    border-color:#0099FF;
+    position:absolute;
+    left: -30%;
+    top:35px;
+    z-index: 10;
+}
+.slide:before{
+    content:"";
+    display:block;
+    border-width:10px;
+    border-style: solid;
+    border-color: transparent transparent #F5F5F5 transparent;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    z-index: 2;
+}
+.slide2{
+    /*border-width: 5px;*/
+    /*border-style: solid;*/
+    /*border-color: red green blue;*/
+    text-align: center;
+    display: none;
+    width: 90%;
+    height: auto;
+    color: #333;
+    border-radius: 3px;
+    background: #FFF;
+    border: 1px solid;
+    border-color:#F2F2F2;
+    position:absolute;
+    left: 20%;
+    top:35px;
+    z-index: 2;
+}
+.slide2:before{
+    content:"";
+    display:block;
+    border-width:10px;
+    border-style: solid;
+    border-color: transparent transparent #F2F2F2 transparent;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    z-index: 2;
+}
+.layui-btn.place{
+    width: 70%;
+    display: block;
+    /*background: #F4F4F4;*/
+   /* background:linear-gradient(to right,#FFF , #F4F4F4 ,#FFF );*/
+    margin: 5% auto;
+}
+.r{
+    color: red;
+}
+.center{
+    text-align: center;
+}
+/*生成 查询*/
+.inquiry ,.query{
+    display: none;
+}
+/*优化*/
+.al{
+
+}
+
+.al .layui-input-block{
+    margin-left: 10%;
+    text-align: center;
+}
+.al .layui-form-radio>i:hover, .layui-form-radioed>i {
+    color: #2D83E2;
+}
+.al .layui-btn{
+    background: #005ED8;
+}
+.one ,.two,.three{
+    display: none;
+}

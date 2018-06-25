@@ -2,333 +2,428 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>apple</title>
-    <link rel="icon" href="img/apple.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/apple.css">
-    <!--<link rel="stylesheet" href="css/apple2.css">-->
-    <!--<link rel="stylesheet/less" href="css/apple.less">-->
-    <!--<script src="js/less.js"></script>-->
-    <script src="js/jquery-3.1.1.js"></script>
-    <script src="js/apple.js" defer async></script>
+    <title>1首页-1</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/per.png">
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+    <link rel="stylesheet" href="css/back.css">
 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css">
 
+    <script src="../public/js/jquery-3.2.1.js"></script>
+    <script src="../public/js/echarts.js"></script>
 </head>
-<body>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo">
 
-<div id="con">
-    <!--回顶-->
-    <!--<div id="hui">-->
-    <!--<img src="img/hui.png" title="回到顶部">-->
-    <!--</div>-->
-    <!--导航-->
-    <div id="nav">
-        <div id="na">
-            <img src="img/cai.png" id="cai">
-            <img src="img/cuo.png" id="cuo">
-            <img src="img/ping.png">
-            <img src="img/gou.png" id="wu2">
+            <img src="img/logo-01.png" alt="logo">
         </div>
-        <ul id="xian">
-            <li><a href="#"><img src="img/ping.png"></a></li>
-            <li><a href="./mac.html">Mac</a></li>
-            <li><a href="./ipad.html">iPad</a></li>
-            <li><a href="#">iPhone</a></li>
-            <li><a href="#">Watch</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="./index.html">技术支持</a></li>
-            <li><a href="#"><img src="img/sou.png"></a></li>
-            <li><a href="#"><img src="img/gou.png"></a></li>
 
-            <input type="text" placeholder="搜索 apple.com" id="sou">
+        <ul class="layui-nav top layui-layout-right">
+            <li class="layui-nav-item">
+                <a href="javascript:;">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    云淡风清
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">基本资料</a></dd>
+                    <dd><a href="">安全设置</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="#"> <img class="ies" src="img/index-001.png" alt="ok"></a>
+            </li>
+            <li class="layui-nav-item">
+                <a href="#"><img class="ies" src="img/index-002.png" alt="no"> </a>
+            </li>
         </ul>
     </div>
 
-<!--登录-->
-    <ul id="sign">
-        <li><img src="img/bag.png">  购物袋</li>
-        <li><img src="img/favorites.png" > 收藏</li>
-        <li><img src="img/orders.png" > 订单</li>
-        <li><img src="img/account.png" > 账户</li>
-        <li id="si2"><img src="img/signIn.png">登录</li>
-    </ul>
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+                <li class="layui-nav-item  layui-nav-itemed"><a href="">首页</a></li>
+                <li class="layui-nav-item ">
+                    <a class="" href="javascript:;">流程审批</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="flow.html">新建流程</a></dd>
+                        <dd><a href="flow-to_do.html">待办事宜</a></dd>
+                        <dd><a href="flow-has_been_done.html">已办事宜</a></dd>
+                        <dd><a href="flow-process_monitoring.html">流程监控</a></dd>
+                        <dd><a href="javascript:;">流程设置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">文档管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="file.html">个人文档</a></dd>
+                        <dd><a href="file-share_documents.html">公共文档</a></dd>
+                        <dd><a href="">共享空间</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">通讯管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">列表一</a></dd>
+                        <dd><a href="javascript:;">列表二</a></dd>
+                        <dd><a href="">超链接</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">人事管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="personnel.html">人事信息</a></dd>
+                        <dd><a href="personnel-address_book.html">通讯录</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">任务管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="task-management.html">日常事务</a></dd>
+                        <dd><a href="task-work_plan.html">工作计划</a></dd>
+                        <dd><a href="task-work_log.html">工作日志</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">资源管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="resource_management.html">车辆管理</a></dd>
+                        <dd><a href=" resource-office.html">办公用品管理</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item ">
+                    <a href="javascript:;">会议管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="meeting_management.html">会议室管理</a></dd>
+                        <dd><a href="meeting_application.html">会议申请</a></dd>
+                        <dd><a href="meeting-conference_inquiries.html">会议查询</a></dd>
+                        <dd><a href="meeting_meeting_management.html">会议管理</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">信息中心</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">列表一</a></dd>
+                        <dd><a href="javascript:;">列表二</a></dd>
+                        <dd><a href="">超链接</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">系统管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">列表一</a></dd>
+                        <dd><a href="javascript:;">列表二</a></dd>
+                        <dd><a href="">超链接</a></dd>
+                    </dl>
+                </li>
 
-
-    <div id="deng">
-        <h3> 请登录</h3>
-        <form action="">
-        <input type="text" placeholder="Apple ID*" required>
-        <input type="password" placeholder="密码*">
-        <span> 忘了自己的ID或密码？</span>
-        <input type="submit" value="登录" class="su"> </i>
-        </form>
-
-        <br>
-        <span id="ai">没有AppleID？立即创建一个。</span>
-
-        <p id="qu1">取消</p>
-
-    </div>
-    <div id="lu">
-        <h2>创建你的AppleID </h2>
-        <form action="" method="get" id="myForm">
-            <input type="email"  name="email2" id="email2" value="" required="required" class="email2" placeholder="name@example.com">
-            <input type="password" placeholder="密码">
-            <input type="password" placeholder="确认密码">
-            <input type="text" placeholder="姓氏">
-            <input type="text" placeholder="名字">
-            <input type="text" placeholder="出生日期">
-
-            <input type="submit" value="继续">
-        </form>
-        <p id="qu2">取消</p>
-
-    </div>
-<!--中间-->
-    <div id="mid">
-        <div id="gu_d">
-            <h2>支持</h2>
-
-            <p> 联系支持 </p>
-            <p>社区 </p>
-
-        </div>
-        <div id="mid_j">
-            <div id="mid_z">
-                <h1>欢迎使用Apple支持</h1>
-                <p>我们随时提供帮助。</p>
-                <input type="text" placeholder="搜索支持">
-                <button></button>
-                <img src="img/ji_Shu.jpg" alt="">
-            </div>
-        </div>
-        <div id="mid_z2">
-            <h1 align="center">选择一种产品</h1>
-
-            <div><img src=" img/biao.png" alt="">
-                <p>AppleWatch</p>
-            </div>
-            <div><img src=" img/shou.png" alt="">
-                <p>iPhone</p>
-            </div>
-            <div><img src=" img/ipd.png" alt="">
-                <p>iPad</p>
-            </div>
-            <div><img src=" img/mac.png" alt="">
-                <p>Mac</p>
-            </div>
-            <div><img src=" img/id.png" alt="">
-                <p>Apple ID</p>
-            </div>
-            <div><img src=" img/yin.png" alt="">
-                <p>iTunes</p>
-            </div>
-        </div>
-        <div id="chan">
-
-            <hr>
-            <h2 align="center"> 展开产品列表 <span> <img src="img/jia.png" id="dui"><img id="cu" src="img/cuo.png "></span>
-            </h2>
-            <div id="pin">
-                <ul id="yong">
-                    <li><img src="img/pay.png"></li>
-                    <li><img src="img/music.png"></li>
-                    <li><img src="img/ipod.png"></li>
-                    <li><img src="img/air.png"></li>
-                    <li><img src="img/cloud.png"></li>
-                    <li><img src="img/os.png"></li>
-                    <li><img src="img/ying.png"></li>
-                    <li><img src="img/zhuan.png"></li>
-                </ul>
-
-            </div>
-            <hr>
+            </ul>
         </div>
     </div>
-    <!--//中部-->
-    <div id="med">
-        <div id="med_t">
-            <h1>支持</h1> <img src="img/xia.png" id="kai"> <img src="img/shang.png" id="guan">
-            <div id="med_p">
-                <p>社区</p>
-                <p>联系支持</p>
-            </div>
+
+    <div class="layui-body">
+        <div class="nav-top">
+            <ul class="top_nav">
+                <li class="layui-btn layui-btn-radius layui-btn-primary"><a href="#" class="ble">首页  </a> <a href="#"><i class="layui-icon">&#x1006;</i></a>  </li>
+                <!--<li class="layui-btn layui-btn-radius layui-btn-primary"><a href="#" >新建流程</a> <a href="#"><i class="layui-icon">&#x1006;</i></a></li>-->
+            </ul>
         </div>
-        <img src="img/bei.jpg" class="bei">
-        <h1 align="center" style="font-weight: bold; font-size: larger; margin: 1rem">欢迎使用 Apple 支持</h1>
-        <p align="center" style="margin: 1rem">我们随时提供帮助。</p>
-        <button class="btn"></button>
-        <input type="text" class="ipt" placeholder="搜索支持">
-        <div id="pro">
-            <h1 align="center" style="margin: 1rem">选择一种产品</h1>
+        <!-- 内容主体区域 -->
+        <div class="con">
+            <div class="con-left">
+<div class="con-left_top">
+<h2><span class="infor">个人资料</span> <a href="#" class="mao">个人资料</a> </h2>
+    <div class="na">
+        <div class="per">
+            <img src="img/1-index-1.png" alt="tu">
+        </div>
+        <div class="xin">
             <ul>
-                <li><img src="img/biao.png" alt="">
-                    <p>Apple Watch </p></li>
-                <li><img src="img/shou.png" alt="">
-                    <p>iPhone</p></li>
-                <li><img src="img/ipd.png" alt="">
-                    <p>iPad</p></li>
-                <li><img src="img/mac.png" alt="">
-                    <p>Mac</p></li>
-                <li><img src="img/id.png" alt="">
-                    <p>Apple ID </p></li>
-                <li><img src="img/yin.png" alt="">
-                    <p>iTunes </p></li>
+                <li> <span class="name">张三</span> <span class="layui-btn layui-btn-radius layui-btn-warm icd"> id:304586</span></li>
+                <li> <span class="grey"> 部门: </span> <span class="bl"> 信息技术科 </span></li>
+                <li>  <span class="grey"> 职务:</span> <span class="bl">科长 </span></li>
+                <li>  <span class="grey">电话: </span> <span class="bl">13753194313 </span></li>
             </ul>
-            <hr>
-            <h2 align="center" style="margin: 1rem;color: #003bb3"><p id="zhan">展开产品列表</p>
-                <img src="img/jia.png" id="kai2">
-                <img src="img/cuo.png" id="guan2">
-            </h2>
-
-            <ul id="xian2">
-                <li> Apple Pay</li>
-                <li>Apple Music</li>
-                <li> iPod</li>
-                <li> AirPods</li>
-                <li>iCloud</li>
-                <li>macOS</li>
-                <li>应用</li>
-                <li>专业应用</li>
-            </ul>
-
-            <hr>
-        </div>
-        <!--/主体/-->
-        <div id="re">
-            <h1 align="center" style="font-weight: bold;margin: 1rem">热门主题</h1>
-            <img src="img/mac.png">
-            <h1 align="center" style="font-weight: bold;margin: 1rem">您是 Mac 新用户吗？</h1>
-            <p style="margin: 1rem">我们一直都很高兴迎接 Mac 新用户的加入。以下链接中的主题可帮助您开始使用 Mac。</p>
-            <p id="op2" class="op2"> 了解您的 Mac &gt;</p>
-            <img src="img/liao.jpg">
-            <h1>改用 iPhone？ </h1>
-
-            <p> 让我们帮助您设置您的 iPhone，并向您展示它提供的一些强大功能。</p>
-            <p id="op3" class="op2">了解您的 iPhone &gt;</p>
-            <h1>确保 Apple 帐户安全的技巧 </h1>
-            <p> 这里介绍了一些实用技巧，可帮助您确保 Apple ID 和帐户信息安全。</p>
-            <p id="op4" class="op2"> 获取有关确保 Apple 帐户安全的支持 &gt;</p>
-            <img src="img/suo.jpg" alt="">
-            <h1>有关 iPhone 及意外关机的信息</h1>
-            <p class="op2">了解详情 &gt;</p>
-            <img src="img/hong.png" style="width: 50%">
-            <h1>AppleCare 和保修</h1>
-            <p>由最了解您 Apple 产品的工作人员，为您提供来自 Apple 的额外保修与支持服务。
-                查明您的产品是不是仍在保修期内，或进一步了解有关购买 AppleCare 产品的信息。</p>
-            <img src="img/bao.png" class="bao">
-            <p class="op2"> 我的产品是不是仍在保修期内？&gt; </p>
-            <hr>
-            <img src="img/zhi.png" class="bao">
-            <p class="op2"> 了解 AppleCare 产品 &gt;</p>
-            <hr>
-            <img src="img/xiu.png" class="bao">
-            <p class="op2"> 管理和注册计划 &gt;</p>
-            <hr>
-
-            <img src="img/wei.png" class="bao">
-            <h1>维修和服务</h1>
-            <p>查找最方便为您的 Apple 产品获得维修的选项，或查看当前维修的进度。</p>
-            <p class="op2">
-                查看维修选项 &gt;
-            </p>
-            <p>查看已开始的 <span class="op2"> 维修的状态</span>。</p>
-            <h1>留心假冒部件</h1>
-            <p>某些假冒和第三方的电源适配器及电池可能设计不当，有可能会导致安全问题。</p>
-            <p>为了确保您在电池更换时能够获得一块正品 Apple 电池，我们建议您前往一家 <span class="op2">Apple Store </span>
-                商店或 <span class="op2"> Apple 授权服务提供商</span>。
-                如果您需要更换一个新的适配器来为您的 Apple 设备充电，我们建议您选择 Apple 的电源适配器。</p>
-            <img src="img/tian.png" class="bao">
-            <h1> Apple 支持社区</h1>
-            <p> 查找并与全球 Apple 用户共享解决方案。</p>
-            <p class="op2">
-                参与讨论 &gt;
-            </p>
-            <hr>
-            <p>联系 Apple 支持</p>
-            <h1>您需要哪方面的帮助？</h1>
-            <p>通过电话、聊天服务或电子邮件获得支持，或安排维修。</p>
-            <button>获得支持</button>
-            <img src="img/he.jpg">
-            <h1>享受免费的店内讲座。</h1>
-            <p>注册学习基础知识或提高您的技能。</p>
-            <p class="op2">
-                查找您附近的讲座 &gt;
-            </p>
-            <hr>
-            <h2>了解 Apple 在中国的服务和保修政策</h2>
-            <p class="op2">了解保修和服务选项</p>
-            <hr>
-            <h2>更换和维修扩展计划</h2>
-            <p class="op2"> 更换和维修扩展计划</p>
-            <p class="op2"> iPhone 6s 意外关机问题计划</p>
-            <p class="op2"> 适用于 iPhone 6 Plus 的 Multi-Touch 维修计划</p>
-            <p class="op2">Apple 交流电源插头转换器更换计划</p>
-            <p class="op2">Apple USB-C 充电线缆更换计划</p>
-            <p class="op2"> Beats Pill XL 扬声器召回计划</p>
-            <p class="op2">所有计划</p>
+            <button class="layui-btn set layui-btn-normal">资料设置</button>
+            <button class="layui-btn set layui-btn-normal">修改密码</button>
 
         </div>
+    </div>
+
+</div>
+                <div class="con-left_bot">
+                    <h2><span class="infor">流程统计</span>  </h2>
+                    <div class="cte">
+                        <div id="main" style="width: 100%;height: 200px"></div>
+                    </div>
+
+</div>
+            </div>
+            <div class="con-cen">
+                <div class="matter">
+
+
+                <h2><span class="infor">待办事宜</span> <a href="#" class="mao">查看详细</a> </h2>
+<p><i>|</i> 申请/审批 <i>|</i></p>
+                <table class="layui-table" >
+                    <colgroup>
+                        <col width="15%">
+                        <col width="15%">
+                        <col width="40%">
+                        <col width="15%">
+                        <col width="15%">
+                        <col>
+                    </colgroup>
+                    <thead>
+                    <tr class="layui-bg-blue">
+                        <th>类型</th>
+                        <th>审批人</th>
+                        <th>时间</th>
+                        <th>当前状况</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>请假申请</td>
+                        <td>张三</td>
+                        <td> 2017-11-17 16:39</td>
+                        <td> 待审批 </td>
+                        <td><a href="#" class="layui-btn layui-btn-radius layui-btn-primary">查看</a> </td>
+                    </tr>
+                    <tr>
+                        <td>发文申请</td>
+                        <td>李四</td>
+                        <td> 2017-11-17 16:39</td>
+                        <td> 待审批 </td>
+                        <td>
+                            <a href="#" class="layui-btn layui-btn-radius layui-btn-primary">查看</a> </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                </div>
+                <div class="matter m">
+                    <h2><span class="infor">文档管理</span> <a href="#" class="mao">查看详细</a> </h2>
+                    <p><i>|</i> 申请/审批 <i>|</i></p>
+                    <table class="layui-table">
+                        <colgroup>
+                            <col width="35%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="25%">
+                            <col width="15%">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr class="layui-bg-blue">
+                            <th>文档标题</th>
+                            <th>大小</th>
+                            <th>共享人</th>
+                            <th>上传时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>学习党的十九大精神</td>
+                            <td>37K</td>
+                            <td>张三</td>
+                            <td>2107-11-17 16:39</td>
+                            <td>
+                                <a href="#" class="layui-btn layui-btn-radius layui-btn-primary">下载</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>学习党的十九大精神...</td>
+                            <td>1.5M</td>
+                            <td>李四</td>
+                            <td>2107-11-17 16:39</td>
+                            <td>
+                                <a href="#" class="layui-btn layui-btn-radius layui-btn-primary">下载</a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div class="con-right">
+                <h2><span class="infor">通讯录</span> <a href="#" class="mao">查看详细</a> </h2>
+                <div class="department">
+                    <dl class="person">
+                        <dt>
+                            <i class="iconfont icon-jian"></i>
+                            <!--<i class="iconfont icon-jian"></i>-->
+                            总经理办公室</dt>
+                        <dd class="detail itemed">
+                            <p><span> 程伟</span> <span class="til">总经理</span></p>
+
+                            <button class="layui-btn layui-btn-radius layui-btn-primary"> 13623659642</button>
+                            <p><span> 孙丽伟</span> <span class="til">副总</span></p>
+
+                            <button class="layui-btn layui-btn-radius layui-btn-primary"> 13623659642</button>
+                        </dd>
+                    </dl>
+                    <dl class="person">
+                        <dt>
+                            <i class="iconfont icon-jia3"></i>
+                            <!--<i class="iconfont icon-jian"></i>-->
+                            部门一</dt>
+                        <dd class="detail ">
+                            <p><span> 程伟</span> <span class="til">总经理</span></p>
+
+                            <button class="layui-btn layui-btn-radius layui-btn-primary"> 13623659642</button>
+
+                        </dd>
+                    </dl>
+                    <dl class="person">
+                        <dt>
+                            <i class="iconfont icon-jia3"></i>
+                            <!--<i class="iconfont icon-jian"></i>-->
+                            部门二</dt>
+                        <dd class="detail ">
+                            <p><span> 程伟</span> <span class="til">总经理</span></p>
+
+                            <button class="layui-btn layui-btn-radius layui-btn-primary"> 13623659642</button>
+
+                        </dd>
+                    </dl>
+                </div>
+
+            </div>
+
+        </div>
+
 
     </div>
-    <!--//底部-->
-    <div id="bot_d">
-        <div id="bot">
-            <p><img src="img/apple.png"> &gt; 支持 </p>
-            <b class="bot_li" id="b22">服务和支持 </b>
-            <b class="bot_li"> 计划</b>
-            <b class="bot_li"> 资源</b>
-            <b class="bot_li"> 通讯录</b>
-            <br>
-            <strong class="bot_st"> 服务和支持 <img src="img/jia.png" id="fu_w"> <img src="img/cuo.png" id="zhi_c"></strong>
-            <ul class="bot_ul" id="bu_t1">
-                <li>免费提供的支持</li>
-                <li> 硬件保修</li>
-                <li> 软件许可协议</li>
-                <li> 服务问题解答 (FAQ)</li>
-            </ul>
-            <strong class="bot_st"> 计划 <img src="img/jia.png" id="fu_w2"> <img src="img/cuo.png" id="zhi_c2"></strong>
-            <ul id="bu_t2">
 
-                <li> Apple 培训</li>
-                <li>教育资源</li>
-            </ul>
-            <strong class="bot_st"> <img src="img/jia.png" id="fu_w3"> <img src="img/cuo.png" id="zhi_c3"> 资源</strong>
-            <ul id="bu_t3">
-
-                <li> 下载和更新</li>
-                <li> 手册</li>
-                <li> 技术规格</li>
-                <li>系统状态</li>
-                <li> 辅助功能</li>
-                <li> 支持站点地图</li>
-            </ul>
-            <strong class="bot_st"> 通讯录 <img src="img/jia.png" id="fu_w4"> <img src="img/cuo.png" id="zhi_c4"></strong>
-            <ul id="bu_t4">
-                <li> 支持电话号码</li>
-                <li> Apple 授权服务提供商</li>
-                <li> iTunes Store 支持</li>
-                <li> 联系移动运营商</li>
-            </ul>
-            <br>
-            <p class="bot_p">更多选购方式：前往 <span class="blue">Apple Store 零售店、</span>拨打 400-666-8800 或 <span
-                    class="blue">查找经销商</span>。</p>
-            <span class="bot_sp">Copyright © 2017 Apple Inc. 保留所有权利。</span>
-            <span>隐私政策</span> <b>|</b>
-            <span>使用条款</span><b>|</b>
-            <span>销售和退款</span><b>|</b>
-            <span>站点地图</span><b>|</b>
-            <span> 联系 Apple</span>
-
-            <span><img src="img/china.png" title="选区您所在的国家和地区"></span>
-            <span>中国</span>
-
-
-        </div>
+    <div class="layui-footer">
+        <!--&lt;!&ndash; 底部固定区域 &ndash;&gt;-->
+        <!--© layui.com - 底部固定区域-->
     </div>
 </div>
+<script src="../public/layui/layui.all.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+
+    //图
+    var con = $('.cte');
+    // var con = document.getElementsByClassName('.con-left_bot');
+    var container = document.getElementById("main");
+
+    var resizeContainer = function () {
+        container.style.width = con.clientWidth + "px";
+        container.style.height = con.clientHeight + 'px';
+    };
 
 
+    resizeContainer();
+    var myChart = echarts.init(container);
+
+    option = {
+       /* title : {
+            text: '南丁格尔玫瑰图',
+            subtext: '纯属虚构',
+            x:'center'
+        },*/
+       color:['#FF6600','#99CC00','#2BB3E6'],
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            x : 'center',
+            y : 'bottom',
+            data:['待审批','已审批','全部流程申请']
+        },
+        /*toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {
+                    show: true,
+                    type: ['pie', 'funnel']
+                },
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },*/
+        calculable : true,
+        series : [
+            {
+                name:'半径模式',
+                type:'pie',
+                radius : [15, 70],
+                center : ['50%', '40%'],
+                roseType : 'radius',
+                label: {
+                    normal: {
+                        show: false
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                lableLine: {
+                    normal: {
+                        show: false
+                    },
+                    emphasis: {
+                        show: true
+                    }
+                },
+                data:[
+                    {value:15, name:'待审批'},
+                    {value:35, name:'已审批'},
+                    {value:50, name:'全部流程申请'},
+
+                ]
+            },
+            /*{
+                name:'面积模式',
+                type:'pie',
+                radius : [30, 110],
+                center : ['75%', '50%'],
+                roseType : 'area',
+                data:[
+                    {value:10, name:'rose1'},
+                    {value:5, name:'rose2'},
+                    {value:15, name:'rose3'},
+                    {value:25, name:'rose4'},
+                    {value:20, name:'rose5'},
+                    {value:35, name:'rose6'},
+                    {value:30, name:'rose7'},
+                    {value:40, name:'rose8'}
+                ]
+            }*/
+        ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+    // 右边
+$(function () {
+    $('.person').on('click','.icon-jia3',function () {
+        $(this).addClass('icon-jian');
+        $(this).removeClass('icon-jia3');
+        $(this).parent().siblings('.detail').slideDown();
+    });
+    $('.person').on('click','.icon-jian',function () {
+        $(this).removeClass('icon-jian');
+        $(this).addClass('icon-jia3');
+        $(this).parent().siblings('.detail').slideUp();
+    })
+})
+</script>
 </body>
 </html>

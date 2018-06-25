@@ -1,0 +1,118 @@
+
+.layui-layout-admin .layui-header{
+    background: #FFF;
+    line-height: 50px;
+    height: 50px;
+    /*border: 1px solid #000;*/
+}
+
+.layui-nav.top .layui-nav-item{
+    height: 50px;
+    line-height: 50px;
+}
+.layui-nav.top .layui-nav-item a{
+    color: #B2B2B2;
+}
+.layui-nav.top .layui-nav-more{
+    border-color: #8C8C8C transparent transparent;
+}
+.layui-nav.top .layui-nav-more:hover{
+    border-color: transparent transparent #8C8C8C ;
+}
+
+.layui-layout.layui-layout-admin .layui-logo{
+    width: 60%;
+    text-align: left;
+    /*height: 50px;*/
+    line-height: 50px;
+    /*border: 1px solid red;*/
+    vertical-align: top;
+}
+
+.layui-logo img{
+    display: block;
+    height:100%;
+    /*border: 1px solid #000;*/
+    /*!*width: 100%;*!*/
+}
+.layui-layout-admin .layui-body{
+    top:50px;
+}
+.layui-layout-admin .layui-side{
+    top:50px;
+}
+.layui-nav.top .layui-nav-item .ies{
+    width: 25px;
+}
+.layui-nav{
+    background: #013865;
+}
+.layui-nav-tree .layui-nav .layui-nav-item a{
+    color: #CFD9E1;
+}
+.layui-nav .layui-nav-item{
+    /*text-align: center;*/
+}
+.layui-nav-tree .layui-nav-item a:hover {
+    background-color: #0099FF;
+}
+.layui-nav-tree .layui-nav-bar{
+    background: #00CCFF;
+}
+.layui-side-scroll{
+    background: #013865;
+}
+.layui-nav-tree .layui-nav-item{
+    border-bottom: 1px solid #012A4D;
+}
+.layui-nav-tree .layui-nav-item .layui-nav-child{
+    text-align: center;
+}
+.nav-top{
+    width: 100%;
+    /*height: 50px;*/
+    background: #9BBEDE;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a, .layui-nav-tree .layui-this>a:hover{
+    background-color: #0099FF;
+}
+.top_nav{
+    zoom: 1;
+}
+.top_nav:after{
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.top_nav li{
+    float: left;
+    margin: 5px 10px ;
+    color: #666;
+}
+.top_nav .layui-btn{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+.top_nav li .layui-icon{
+    font-size: 10px;
+    color: #007BE0;
+    margin-left: 20%;
+}
+.ble{
+    color: #9BBEDE;
+}
+/*内容*/
+.layui-body{
+    background: #EDF2F5;
+}
+.layui-body .con{
+    width: 98%;
+    background: #FFF;
+    height: auto;
+    margin: 1%;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    box-shadow: -2px -2px 1px #D4E1ED;
+}

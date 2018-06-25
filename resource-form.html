@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a task</title>
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/layui/css/layui.css">
+    <style>
+        .blue{
+            background: #0066CC;
+        }
+        .blue_hor{
+            background: #0066CC;
+            opacity: .5;
+            transition: 0.5s;
+            filter: alpha(opacity=50);
+        }
+        .blue_hor:hover{
+            opacity: .9;
+            filter: alpha(opacity = 90);
+        }
+
+
+        h2{
+           text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+        }
+p{
+    width: 90%;
+    margin: 10px auto;
+    font-size: 12px;
+}
+        .dao{
+            padding: 20px;
+            text-align: center;
+        }
+.layui-table.tast{
+    width: 90%;
+    margin:10px  auto;
+}
+        .layui-table.tast tr td{
+            font-size: 12px;
+            padding: 9px;
+        }
+        ._orange{
+            color: #FF9A02;
+        }
+        ._cyan{
+            background: #E4EFF5;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<h2>车辆信息登记</h2>
+<p> <span>车辆编号:</span> <span>543211</span></p>
+<table class="layui-table tast">
+
+    <colgroup>
+        <col width="15%">
+        <col width="20%">
+        <col width="15%">
+        <col width="20%">
+        <col width="15%">
+        <col width="15%">
+        <col>
+    </colgroup>
+
+    <tbody>
+    <tr>
+        <td class="_cyan">车型</td>
+        <td> 大众routan</td>
+        <td class="_cyan">车牌号</td>
+        <td>晋M31512</td>
+        <td class="_cyan">驾驶员</td>
+        <td> 李文</td>
+    </tr>
+    <tr>
+        <td class="_cyan">购买价格</td>
+        <td> 565000元</td>
+        <td class="_cyan">购置日期</td>
+        <td>2018-01-02  </td>
+        <td class="_cyan">经手人</td>
+        <td> 李文</td>
+    </tr>
+    <tr>
+        <td class="_cyan">发动机编号</td>
+        <td> 2456752k</td>
+        <td class="_cyan">车辆类型</td>
+        <td>商务 </td>
+        <td class="_cyan">当前状态</td>
+        <td> <span class="_orange">外派</span></td>
+    </tr>
+
+    </tbody>
+</table>
+ <div class="dao">
+     <button class="layui-btn blue" lay-submit lay-filter="formDemo">导出</button>
+     <button type="reset" class="layui-btn blue_hor ">打印</button>
+ </div>
+
+
+<script src="../public/layui/layui.all.js"></script>
+<script>
+    //JavaScript代码区域
+    layui.use('element', function(){
+        var element = layui.element;
+
+    });
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+        //时间选择器
+        laydate.render({
+            elem: '#test5'
+            ,type: 'datetime'
+        });
+    });
+
+    </script>
+</body>
+</html>
